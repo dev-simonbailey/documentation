@@ -1,7 +1,5 @@
 # Profile
-[Return to List](baseURL/tenant-portal/index)
+[Return to List](/documentation/tenant-portal/index)
 
-![Profile Link](/assets/img/profile-link.png "Profile Link")
+![Profile Link](/documentation/assets/img/profile-link.png "Profile Link")
 
-
-[baseURL]: /documentation
