@@ -1,4 +1,4 @@
 # Profile
-[Return to List](/tenant-portal/index)
+[Return to List](/documentation/tenant-portal/index)
 
 ![Profile Link](/assets/img/profile-link.png "Profile Link")
