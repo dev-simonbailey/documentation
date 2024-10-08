@@ -1,0 +1,25 @@
+.blue-box {
+    background-color: #e9f2ff;
+    padding: 20px;
+    border: 1px solid gray;
+    margin:auto;
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+  
+.yellow-box {
+    background-color: #fff7d6;
+    padding: 20px;
+    border: 1px solid gray;
+    margin:auto;
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+  .red-box {
+    background-color: #feeceb;
+    padding: 20px;
+    border: 1px solid gray;
+    margin:auto;
+    margin-top:20px;
+    margin-bottom:20px;
+  }

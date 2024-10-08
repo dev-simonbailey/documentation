@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/css/menu.css">
 <style>
 * {
   box-sizing: border-box;
@@ -12,89 +13,9 @@ body {
   margin: 0;
 }
 
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
 
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
 
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font: inherit;
-  margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  width: 100%;
-  left: 0;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content .header {
-  background: red;
-  padding: 16px;
-  color: white;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 20%;
-  padding: 10px;
-  background-color: #ccc;
-  height: 400px;
-}
-
-.column a {
-  float: none;
-  color: black;
-  padding: 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.column a:hover {
-  background-color: #ddd;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 .inline-image {
   width: 100%;
@@ -106,39 +27,14 @@ body {
   width: 800px;
   margin:auto
 }
-.blue-box {
-  background-color: #e9f2ff;
-  padding: 20px;
-  border: 1px solid gray;
-  margin:auto;
-  margin-top:20px;
-  margin-bottom:20px;
-}
-.yellow-box {
-  background-color: #fff7d6;
-  padding: 20px;
-  border: 1px solid gray;
-  margin:auto;
-  margin-top:20px;
-  margin-bottom:20px;
-}
-.red-box {
-  background-color: #feeceb;
-  padding: 20px;
-  border: 1px solid gray;
-  margin:auto;
-  margin-top:20px;
-  margin-bottom:20px;
-}
+
 
 
 .button-style{
-    background-color: lightgrey;
-    font-family: 'Courier New', Courier, monospace;
+    background-color: #DCDFE4;
     color: black;
-    border-radius: 2px;
-    padding: 2px;
-    font-weight: 600;
+    border-radius: 5px;
+    padding: 4px;
 }
 .content-section {
   padding: 20px;
@@ -162,14 +58,17 @@ body {
 <body>
     <div class="navbar">
         <div class="dropdown">
-          <button class="dropbtn">Sections 
-            <i class="fa fa-caret-down"></i>
+          <button class="dropbtn" style="text-align:middle">Sections 
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 -6 24 24">
+                <path fill="white" d="m7 10l5 5l5-5z" />
+            </svg>
           </button>
           <div class="dropdown-content">
   
             <div class="row">
               <div class="column">
                 <a href="#">Profile</a>
+                <a href="#">Dashboard</a>
                 <a href="#">Sites</a>
                 <a href="#">Fleets</a>
               </div>
