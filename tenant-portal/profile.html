@@ -2,7 +2,6 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--Development-->
 <link rel="stylesheet" href="/assets/css/global.css">
 <link rel="stylesheet" href="/assets/css/menu.css">
 <link rel="stylesheet" href="/assets/css/content.css">
@@ -10,93 +9,14 @@
 <link rel="stylesheet" href="/assets/css/divider.css">
 <link rel="stylesheet" href="/assets/css/button-style.css">
 <link rel="stylesheet" href="/assets/css/image.css">
-<!-- Production -->
-<!--
-<link rel="stylesheet" href="/documentation/assets/css/global.css">
-<link rel="stylesheet" href="/documentation/assets/css/menu.css">
-<link rel="stylesheet" href="/documentation/assets/css/content.css">
-<link rel="stylesheet" href="/documentation/assets/css/color-boxes.css">
-<link rel="stylesheet" href="/documentation/assets/css/divider.css">
-<link rel="stylesheet" href="/documentation/assets/css/button-style.css">
-<link rel="stylesheet" href="/documentation/assets/css/image.css">
--->
-<script>
-    function includeHTML() {
-      var z, i, elmnt, file, xhttp;
-      /* Loop through a collection of all HTML elements: */
-      z = document.getElementsByTagName("*");
-      for (i = 0; i < z.length; i++) {
-        elmnt = z[i];
-        /*search for elements with a certain atrribute:*/
-        file = elmnt.getAttribute("w3-include-html");
-        if (file) {
-          /* Make an HTTP request using the attribute value as the file name: */
-          xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function() {
-            if (this.readyState == 4) {
-              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-              /* Remove the attribute, and call this function once more: */
-              elmnt.removeAttribute("w3-include-html");
-              includeHTML();
-            }
-          }
-          xhttp.open("GET", file, true);
-          xhttp.send();
-          /* Exit the function: */
-          return;
-        }
-      }
-    }
-    </script>
-
+<script src="/assets/js/includeHTML.js"></script>
+<script src="/assets/js/environment.js"></script>
+<script src="/assets/js/nav.js"></script>
 </head>
 <body>
-    <div class="navbar">
-        <div class="dropdown">
-          <button class="dropbtn" style="text-align:middle">Sections 
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 -6 24 24">
-                <path fill="white" d="m7 10l5 5l5-5z" />
-            </svg>
-          </button>
-          <div class="dropdown-content">
-  
-            <div class="row">
-              <div class="column">
-                <a href="#">Profile</a>
-                <a href="#">Dashboard</a>
-                <a href="#">Sites</a>
-                <a href="#">Fleets</a>
-              </div>
-              <div class="column">
-                <a href="#">Vehicles</a>
-                <a href="#">Vehicle Details</a>
-                <a href="#">Hiring</a>
-              </div>
-              <div class="column">
-                <a href="#">Incidents</a>
-                <a href="#">Incident Details</a>
-                <a href="#">Video Downloads</a>
-              </div>
-              <div class="column">
-                <a href="#">Settings Overview</a>
-                <a href="#">Settings</a>
-                <a href="#">Companies</a>
-                <a href="#">Devices</a>
-                <a href="#">Teams</a>
-                <a href="#">Users</a>
-                <a href="#">API</a>
-              </div>
-              <div class="column">
-                <a href="#">Insights</a>
-                <a href="#">Reports</a>
-              </div>
-            </div>
-          </div>
-        </div> 
-      </div>
+    <div w3-include-html="mega-menu.html"></div>
     <div id='main' class="main-content">
-        <div w3-include-html="/assets/html/test.html"></div>
+        <div w3-include-html="test.html"></div>
         <div class="content-section">
             <p>The Profile section is user-specific and divided into 5 sections</p>
         </div>
@@ -104,7 +24,7 @@
             <h3>Profile Information</h3>
         </div>
         <div class="content-section">
-            <img src="/documentation/assets/img/profile/img01.png" class="inline-image"/>
+            <img w3-create-path src="/documentation/assets/img/profile/img01.png" class="inline-image"/>
         </div>
         <div class="blue-box">
             <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 48 48">
@@ -215,16 +135,38 @@
         </div>
     </div>
 <script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
+    function updateExternalResources(isDev) {
+  // Update CSS links
+  const links = document.querySelectorAll('link[rel="stylesheet"]');
+  links.forEach(link => {
+    let href = link.getAttribute("href");
+    if (isDev) {
+      href = href.replace("/documentation/assets/css/", "/assets/css/");
+    } else {
+      href = href.replace("/assets/css/", "/documentation/assets/css/");
+    }
+    link.setAttribute("href", href);
+  });
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  // Update JS scripts
+  const scripts = document.querySelectorAll("script");
+  scripts.forEach(script => {
+    let src = script.getAttribute("src");
+    if (src) {
+      if (isDev) {
+        src = src.replace("/documentation/assets/js/", "/assets/js/");
+      } else {
+        src = src.replace("/assets/js/", "/documentation/assets/js/");
+      }
+      script.setAttribute("src", src);
+    }
+  });
 }
 </script>
 <script>
-    includeHTML();
-    </script>
+    includeHTML(true);
+    updateImageSources(true);
+    updateExternalResources(true);
+</script>
 </body>
 </html> 
