@@ -67,6 +67,16 @@ body {
   margin-top:20px;
   margin-bottom:20px;
 }
+.red-box {
+  background-color: #feeceb;
+  padding: 20px;
+  border: 1px solid gray;
+  margin:auto;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+
 .button-style{
     background-color: lightgrey;
     font-family: 'Courier New', Courier, monospace;
@@ -92,77 +102,98 @@ body {
 </style>
 </head>
 <body>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-<div id="mySidenav" class="sidenav">
-   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-	    <path fill="currentColor" d="m5 13l4 4l-1.4 1.42L1.18 12L7.6 5.58L9 7l-4 4h16v2zm16-7v2H11V6zm0 10v2H11v-2z" />
-    </svg>
-   </a>
-    <p></p>
-    <a href="#">Profile</a>
-    <a href="#">Dashboard</a>
-    <a href="#">Tenants</a>
-    <a href="#">Video Reviews</a>
-    <a href="#">Devices</a>
-    <a href="#">Device Firmware</a>
-    <a href="#">Debug Log</a>
-    <a href="#">Users</a>
-    <a href="#">Reports</a>
-</div>
-<div id='main' class="main-content">
-  <div class="content-section">
-    The Profile section is user-specific and divided into 5 sections
-  </div>
-  <div class="content-section">
-    <h3>
-        Profile Information
-    </h3>
-  </div>
-  <div class="content-section">
-    <img src="/documentation/assets/img/profile/img01.png" class="inline-image"/>
-  </div>
-  <div class="blue-box">
-    <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 48 48">
-        <circle cx="24" cy="24" r="21" fill="#2196f3" />
-        <path fill="#fff" d="M22 22h4v11h-4z" />
-        <circle cx="24" cy="16.5" r="2.5" fill="#fff" />
-    </svg>
-    <h4>Tasks that can be performed</h4>
-    <ul>
-        <li>Upload a profile image</li>
-        <li>Change your name</li>
-        <li>Change your email address</li>
-    </ul>
-    To save changes, click on the <span class="button-style">Save</span> button
-  </div>
-  <hr class="divider"/>
-  <div class="content-section">
-    <h3>Update Password</h3>
-  </div>
-  <div class="content-section">
-    <img src="/documentation/assets/img/profile/img02.png" class="inline-image"/>
-  </div>
-  <div class="blue-box">
-    <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 48 48">
-        <circle cx="24" cy="24" r="21" fill="#2196f3" />
-        <path fill="#fff" d="M22 22h4v11h-4z" />
-        <circle cx="24" cy="16.5" r="2.5" fill="#fff" />
-    </svg>
-    <h4>Tasks that can be performed</h4>
-    <ul>
-        <li>Updating of password</li>
-    </ul>
-    To save changes, click on the <span class="button-style">Save</span> button
-  </div>
-  <div class="yellow-box">
-    <span style="vertical-align: middle">
-    <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24">
-        <path fill="#e56911" d="M1 21L12 2l11 19zm11-3q.425 0 .713-.288T13 17t-.288-.712T12 16t-.712.288T11 17t.288.713T12 18m-1-3h2v-5h-2z" />
-    </svg>
-    To change the password, you must enter in the current password.</span>
-  </div>
-</div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+	            <path fill="currentColor" d="m5 13l4 4l-1.4 1.42L1.18 12L7.6 5.58L9 7l-4 4h16v2zm16-7v2H11V6zm0 10v2H11v-2z" />
+            </svg>
+        </a>
+        <p></p>
+        <a href="#">Profile</a>
+        <a href="#">Dashboard</a>
+        <a href="#">Tenants</a>
+        <a href="#">Video Reviews</a>
+        <a href="#">Devices</a>
+        <a href="#">Device Firmware</a>
+        <a href="#">Debug Log</a>
+        <a href="#">Users</a>
+        <a href="#">Reports</a>
+    </div>
+    <div id='main' class="main-content">
+        <div class="content-section">
+            <p>The Profile section is user-specific and divided into 5 sections</p>
+        </div>
+        <div class="content-section">
+            <h3>Profile Information</h3>
+        </div>
+        <div class="content-section">
+            <img src="/documentation/assets/img/profile/img01.png" class="inline-image"/>
+        </div>
+        <div class="blue-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 48 48">
+                <circle cx="24" cy="24" r="21" fill="#2196f3" />
+                <path fill="#fff" d="M22 22h4v11h-4z" />
+                <circle cx="24" cy="16.5" r="2.5" fill="#fff" />
+            </svg>
+            <h4>Tasks that can be performed</h4>
+            <ul>
+                <li>Upload a profile image</li>
+                <li>Change your name</li>
+                <li>Change your email address</li>
+            </ul>
+           <p>To save changes, click on the <span class="button-style">Save</span> button</p>
+        </div>
+        <hr class="divider"/>
+        <div class="content-section">
+            <h3>Update Password</h3>
+        </div>
+        <div class="content-section">
+            <img src="/documentation/assets/img/profile/img02.png" class="inline-image"/>
+        </div>
+        <div class="blue-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 48 48">
+                <circle cx="24" cy="24" r="21" fill="#2196f3" />
+                <path fill="#fff" d="M22 22h4v11h-4z" />
+                <circle cx="24" cy="16.5" r="2.5" fill="#fff" />
+            </svg>
+            <h4>Tasks that can be performed</h4>
+            <ul>
+                <li>Updating of password</li>
+            <p>To save changes, click on the <span class="button-style">Save</span> button</p>
+        </div>
+        <div class="yellow-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24">
+                <path fill="#e56911" d="M1 21L12 2l11 19zm11-3q.425 0 .713-.288T13 17t-.288-.712T12 16t-.712.288T11 17t.288.713T12 18m-1-3h2v-5h-2z" />
+            </svg>
+            <p>To change the password, you must enter in the current password.</p>
+        </div>
+        <hr class="divider"/>
+        <div class="content-section">
+            <h3>Two Factor Authentication</h3>
+        </div>
+        <div class="content-section">
+            <img src="/documentation/assets/img/profile/img03.png" class="inline-image"/>
+        </div>
+        <div class="blue-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 48 48">
+                <circle cx="24" cy="24" r="21" fill="#2196f3" />
+                <path fill="#fff" d="M22 22h4v11h-4z" />
+                <circle cx="24" cy="16.5" r="2.5" fill="#fff" />
+            </svg>
+            <p>When two factor authentication is enabled, you will be prompted for a secure, random token during authentication. You may retrieve this token from your phone's Google Authenticator application.</p>
+            <p>Tasks that can be performed</p>
+            <ul>
+                <li>This section allows Two Factor Authentication (2FA / MFA), to be enabled on this users account.</li>
+            </ul>
+        </div>
+        <div class="red-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 2048 2048">
+                <path fill="#c9372c" d="M1024 0q141 0 272 36t244 104t207 160t161 207t103 245t37 272q0 141-36 272t-104 244t-160 207t-207 161t-245 103t-272 37q-141 0-272-36t-244-104t-207-160t-161-207t-103-245t-37-272q0-141 36-272t104-244t160-207t207-161T752 37t272-37m113 1024l342-342l-113-113l-342 342l-342-342l-113 113l342 342l-342 342l113 113l342-342l342 342l113-113z" />
+            </svg>
+            <p>As of the 23/09/2024, this feature is currently being investigated and is not currently in use.</p>
+        </div>
+    </div>
 <script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
