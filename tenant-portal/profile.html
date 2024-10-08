@@ -2,59 +2,54 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Development-->
+<link rel="stylesheet" href="/assets/css/global.css">
+<link rel="stylesheet" href="/assets/css/menu.css">
+<link rel="stylesheet" href="/assets/css/content.css">
+<link rel="stylesheet" href="/assets/css/color-boxes.css">
+<link rel="stylesheet" href="/assets/css/divider.css">
+<link rel="stylesheet" href="/assets/css/button-style.css">
+<link rel="stylesheet" href="/assets/css/image.css">
+<!-- Production -->
+<!--
+<link rel="stylesheet" href="/documentation/assets/css/global.css">
 <link rel="stylesheet" href="/documentation/assets/css/menu.css">
+<link rel="stylesheet" href="/documentation/assets/css/content.css">
 <link rel="stylesheet" href="/documentation/assets/css/color-boxes.css">
-<style>
-* {
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
+<link rel="stylesheet" href="/documentation/assets/css/divider.css">
+<link rel="stylesheet" href="/documentation/assets/css/button-style.css">
+<link rel="stylesheet" href="/documentation/assets/css/image.css">
+-->
+<script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /* Loop through a collection of all HTML elements: */
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /* Make an HTTP request using the attribute value as the file name: */
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+              /* Remove the attribute, and call this function once more: */
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /* Exit the function: */
+          return;
+        }
+      }
+    }
+    </script>
 
-body {
-  margin: 0;
-}
-
-
-
-
-
-.inline-image {
-  width: 100%;
-  height: auto;
-  border:2px solid gray;
-}
-.main-content {
-  padding: 20px;
-  width: 800px;
-  margin:auto
-}
-
-
-
-.button-style{
-    background-color: #DCDFE4;
-    color: black;
-    border-radius: 5px;
-    padding: 4px;
-}
-.content-section {
-  padding: 20px;
-  background-color: #f2f2f2;
-  border: 1px solid gray;
-  margin:auto;
-}
-.divider {
-  border: 1px solid gray;
-  margin: 20px;
-}
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    height: auto;
-  }
-}
-</style>
 </head>
 <body>
     <div class="navbar">
@@ -101,6 +96,7 @@ body {
         </div> 
       </div>
     <div id='main' class="main-content">
+        <div w3-include-html="/assets/html/test.html"></div>
         <div class="content-section">
             <p>The Profile section is user-specific and divided into 5 sections</p>
         </div>
@@ -227,6 +223,8 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
-   
+<script>
+    includeHTML();
+    </script>
 </body>
 </html> 
