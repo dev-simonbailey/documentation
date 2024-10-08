@@ -1,5 +1,6 @@
 .inline-image {
-    width: 100%;
     height: auto;
     border:2px solid gray;
+    width:auto;
+    max-width: 100%;
   }
