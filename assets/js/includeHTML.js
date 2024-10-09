@@ -21,10 +21,10 @@ function includeHTML(dev) {
             includeHTML();
           }
         }
-        if(dev){
-          file = "/assets/html/" + file;
-        } else {
+        if(!dev){
           file = "/documentation/assets/html/" + file;
+        } else {
+          file = "/assets/html/" + file;
         }
         xhttp.open("GET", file, true);
         xhttp.send();
