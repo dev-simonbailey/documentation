@@ -3,8 +3,8 @@ function updateImageSources(isDev) {
     images.forEach(img => {
       let src = img.getAttribute("src");
       console.log(src);
-      if (!isDev) {
-        src = src.replace("/assets/img/", "/documentation/assets/img/");
+      if (isDev) {
+        src = src.replace("/documentation/assets/img/", "/assets/img/");
       }
       img.setAttribute("src", src);
     });

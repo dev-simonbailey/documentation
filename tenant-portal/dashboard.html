@@ -167,8 +167,8 @@
         const links = document.querySelectorAll('link[rel="stylesheet"]');
         links.forEach(link => {
         let href = link.getAttribute("href");
-        if (!isDev) {
-            href = href.replace("/assets/css/", "/documentation/assets/css/");
+        if (isDev) {
+            href = href.replace("/documentation/assets/css/", "/assets/css/");
         }
         link.setAttribute("href", href);
      });
@@ -178,7 +178,7 @@
         let src = script.getAttribute("src");
         if (src) {
         if (!isDev) {
-            src = src.replace("/assets/js/", "/documentation/assets/js/");
+            src = src.replace("/documentation/assets/js/", "/assets/js/");
         }
         script.setAttribute("src", src);
         }
