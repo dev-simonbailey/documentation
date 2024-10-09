@@ -184,11 +184,11 @@
         }
     });
 }
-</script>
-<script>
-    updateExternalResources(isDev);
-    includeHTML(isDev);
-    updateImageSources(isDev);
+document.addEventListener("DOMContentLoaded", function() {
+            updateExternalResources(isDev);
+            updateImageSources(isDev);
+            includeHTML(isDev);
+        });
 </script>
 </body>
 </html> 
