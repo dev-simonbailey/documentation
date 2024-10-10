@@ -21,14 +21,8 @@ function includeHTML(dev) {
             includeHTML();
           }
         }
-        if(!dev){
-          file = "/documentation/assets/html/" + file;
-        } else {
-          file = "/assets/html/" + file;
-        }
         xhttp.open("GET", file, true);
         xhttp.send();
-        /* Exit the function: */
         return;
       }
     }
