@@ -163,28 +163,46 @@
         </div>
     </div>
 <script>
-    function updateExternalResources(isDev) {
-        const links = document.querySelectorAll('link[rel="stylesheet"]');
-        links.forEach(link => {
-        let href = link.getAttribute("href");
-        if (!isDev) {
-            href = href.replace("/assets/css/", "/documentation/assets/css/");
-        }
-        link.setAttribute("href", href);
-        });
+        function updateExternalResources(isDev) {
+            const links = document.querySelectorAll('link[rel="stylesheet"]');
+            links.forEach(link => {
+                let href = link.getAttribute("href");
+                if (!isDev) {
+                    href = href.replace("/assets/css/", "/documentation/assets/css/");
+                }
+                link.setAttribute("href", href);
+                console.log(`Updated CSS href: ${href}`);
+            });
 
-    const scripts = document.querySelectorAll("script");
-    scripts.forEach(script => {
-        let src = script.getAttribute("src");
-        if (src) {
-        if (!isDev) {
-            src = src.replace("/assets/js/", "/documentation/assets/js/");
+            const scripts = document.querySelectorAll("script");
+            scripts.forEach(script => {
+                let src = script.getAttribute("src");
+                if (src) {
+                    if (!isDev) {
+                        src = src.replace("/assets/js/", "/documentation/assets/js/");
+                    }
+                    script.setAttribute("src", src);
+                    console.log(`Updated JS src: ${src}`);
+                }
+            });
         }
-        script.setAttribute("src", src);
+
+        function updateImageSources(isDev) {
+            const images = document.querySelectorAll("img");
+            images.forEach(img => {
+                let src = img.getAttribute("src");
+                if (isDev) {
+                    src = src.replace("/documentation/assets/img/", "/assets/img/");
+                } else {
+                    src = src.replace("/assets/img/", "/documentation/assets/img/");
+                }
+                img.setAttribute("src", src);
+                console.log(`Updated image src: ${src}`);
+            });
         }
-    });
-}
-document.addEventListener("DOMContentLoaded", function() {
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const isDev = false; // Set this based on your environment
             updateExternalResources(isDev);
             updateImageSources(isDev);
             includeHTML(isDev);
