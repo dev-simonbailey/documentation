@@ -201,17 +201,11 @@
             });
         }
 
-        /*
         document.addEventListener("DOMContentLoaded", function() {
-            const isDev = false; // Set this based on your environment
             updateExternalResources(isDev);
             updateImageSources(isDev);
-            includeHTML(isDev);
         });
-        */
         window.onload = function() {
-            updateExternalResources(isDev);
-            updateImageSources(isDev);
             includeHTML(isDev);
         };
 </script>
