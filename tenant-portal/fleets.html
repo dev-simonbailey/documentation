@@ -1,149 +1,217 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="../env.js"></script>
-<link rel="stylesheet" href="/documentation/assets/css/global.css">
-<link rel="stylesheet" href="/documentation/assets/css/menu.css">
-<link rel="stylesheet" href="/documentation/assets/css/content.css">
-<link rel="stylesheet" href="/documentation/assets/css/color-boxes.css">
-<link rel="stylesheet" href="/documentation/assets/css/divider.css">
-<link rel="stylesheet" href="/documentation/assets/css/button-style.css">
-<link rel="stylesheet" href="/documentation/assets/css/image.css">
-<script src="/documentation/assets/js/includeHTML.js"></script>
-<script src="/documentation/assets/js/environment.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+    <link rel="stylesheet" href="../assets/css/content.css">
+    <link rel="stylesheet" href="../assets/css/color-boxes.css">
+    <link rel="stylesheet" href="../assets/css/divider.css">
+    <link rel="stylesheet" href="../assets/css/button-style.css">
+    <link rel="stylesheet" href="../assets/css/image.css">
+    <script src="../assets/js/includeHTML.js"></script>
+    <script src="../assets/js/environment.js"></script>
 </head>
 <body>
-    <div w3-include-html="mega-menu.html"></div>
+    <div w3-include-html="../assets/html/mega-menu.html"></div>
     <div id='main' class="main-content">
         <div class="content-section">
             <h1>Fleets</h1>
-            <p>The Profile section is user-specific and divided into 5 sections</p>
+            <p>The Fleets page details the fleets that have been created in the portal, and show the following:</p>
+            <ul>
+                <li>The Fleet Name</li>
+                <li>If the Fleet is enabled</li>
+                <li>Actions that can be performed on existing fleets</li>
+                <li>Add a new fleet</li>
+                <li>Import a fleet from a CSV</li>
+                <li>Export the fleet(s) to CSV</li>
+            </ul>
+        </div>
+        <div class="content-section">
+            <img src="../assets/img/fleets/img01.png" class="inline-image"/>
         </div>
         <hr class="divider"/>
         <div class="content-section">
-            <h3>Profile Information</h3>
+            <h3>Actions</h3>
+            <p><strong>EDIT FLEET</strong></span></p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/fleets/img02.png" class="inline-image"/>
         </div>
         <div class="content-section">
-            <img src="/documentation/assets/img/profile/img01.png" class="inline-image"/>
+            <p>Clicking on the <span class="button-style">Pencil</span> icon will show the Edit Fleet modal</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/fleets/img03.png" class="inline-image"/>
         </div>
         <div class="content-section">
-            <div class="blue-box">
-                <p><strong>Tasks that can be performed</strong></p>
-                <ul>
-                    <li>Upload a profile image</li>
-                    <li>Change your name</li>
-                    <li>Change your email address</li>
-                </ul>
-            <p>To save changes, click on the <span class="button-style">Save</span> button</p>
-            </div>
+            <p>On this modal, the name (Title), the company this fleet belongs to, the description, the enabled status and fleet manager can be edited. Clicking on <span class="button-style">SAVE</span> will save any modifications, whilst clicking on <span class="button-style">CANCEL</span> will stop the editing process and return to the Fleets list.</p>
+        </div>
+        <div class="content-section">
+            <p><strong>REMOVE FLEET</strong></p>
+        </div>
+        <div class="content-section">
+            <p>Clicking on the <span class="button-style">Trash</span> will display a confirmation that the selected fleet is to be deleted.</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/fleets/img04.png" class="inline-image"/>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/fleets/img05.png" class="inline-image"/>
         </div>
         <hr class="divider"/>
         <div class="content-section">
-            <h3>Update Password</h3>
+            <p><strong>ADD FLEET</strong></p>
         </div>
         <div class="content-section">
-            <img src="/documentation/assets/img/profile/img02.png" class="inline-image"/>
+            <p>Clicking in the <span class="button-style">ADD FLEET</span> button will display the Create Fleet modal</p>
         </div>
-        <div class="content-section">  
-            <div class="blue-box">
-                <p><strong>Tasks that can be performed</strong></p>
-                <ul>
-                    <li>Updating of password</li>
-                <p>To save changes, click on the <span class="button-style">Save</span> button</p>
-            </div>
+        <div class="image-section">
+            <img src="../assets/img/fleets/img06.png" class="inline-image"/>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/fleets/img07.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p>To create a fleet, follow these steps</p>
+        </div>
+        <div class="content-section">
+            <ul>
+                <li><strong>Step 1 - Enter a name for the fleet</strong></li>
+            </uL>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/fleets/img08.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <ul>
+                <li><strong>Step 2 - Select a company the fleet will belong to</strong></li>
+            </uL>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/fleets/img09.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <ul>
+                <li><strong>Step 3 - Enter a description of the fleet</strong></li>
+            </uL>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/fleets/img10.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <ul>
+                <li><strong>Step 4 - Enable the fleet within the portal</strong></li>
+            </uL>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/fleets/img11.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <ul>
+                <li><strong>Step 5 - Select a fleet manager</strong></li>
+            </uL>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/fleets/img12.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <ul>
+                <li><strong>Step 6 - Save the new fleet</strong></li>
+            </uL>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/fleets/img13.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p>Clicking on <span class="button-style">SAVE</span> will save the new fleet, whilst clicking on <span class="button-style">CANCEL</span> will stop the creation process and return to the Fleets list.</p>
+        </div>
+        <hr class="divider"/>
+        <div class="content-section">
+            <p><strong>Import From CSV</strong></p>
+        </div>
+        <div class="content-section">
+            <p>Click on the <span class="button-style">IMPORT FROM CSV</span> button to open the Import Fleets modal</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/fleets/img14.png" class="inline-image"/>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/fleets/img15.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p>Click on the paperclip or within the file box to show the file chooser and navigate to the location on your computer where the CSV file is located.</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/fleets/img16.png" class="inline-image"/>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/fleets/img17.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p>Clicking on the <span class="button-style">SAVE</span> button will upload the file and process the data, adding it to the portal. Clicking on the <span class="button-style">CANCEL</span> button will cancel the import process and return to the Fleet list.</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/fleets/img18.png" class="inline-image"/>
         </div>
         <div class="content-section">
             <div class="yellow-box">
-                <p>To change the password, you must enter in the current password.</p>
+                <p>Fields</p>
+                <ul>
+                    <li>
+                        id
+                        <ul>
+                            <li>Integer</li>
+                            <li>Example: 1</li>
+                        </ul>   
+                    </li>
+                    <li>
+                        title
+                        <ul>
+                            <li>String</li>
+                            <li>Example: Safety Sheild</li>
+                        </ul>
+                    </li>
+                    <li>
+                        description
+                        <ul>
+                            <li>String</li>
+                            <li>Example: Ratione vel itaque maxime et. Ad omnis...</li>
+                        </ul>
+                    </li>
+                    <li>
+                        enabled
+                        <ul>
+                            <li>Integer</li>
+                            <li>Example: 1 (enabled), 0 (not enabled)</li>
+                        </ul>
+                    </li>
             </div>
         </div>
         <hr class="divider"/>
         <div class="content-section">
-            <h3>Two Factor Authentication</h3>
+            <p><strong>Export Fleet To CSV</strong></p>
         </div>
         <div class="content-section">
-            <img src="/documentation/assets/img/profile/img03.png" class="inline-image"/>
-        </div>
-        <div class="content-section">
-            <div class="blue-box">
-                <p>When two factor authentication is enabled, you will be prompted for a secure, random token during authentication. You may retrieve this token from your phone's Google Authenticator application.</p>
-                <p>Tasks that can be performed</p>
-                <ul>
-                    <li>This section allows Two Factor Authentication (2FA / MFA), to be enabled on this users account.</li>
-                </ul>
-            </div>
-        </div>
-        <div class="content-section">
-            <div class="red-box">
-                <p>As of the 23/09/2024, this feature is currently being investigated and is not currently in use.</p>
-            </div>
-        </div>
-        <hr class="divider"/>
-        <div class="content-section">
-            <h3>Browser Sessions</h3>
-        </div>
-        <div class="content-section">
-            <img src="/documentation/assets/img/profile/img04.png" class="inline-image"/>
+            <p>To export the list of fleets, click on the <span class="butotn-style">EXPORT CSV</span> button. The CSV export process will then start and download the created CSV file to your computer, in to the location specified in your browser.</p> 
         </div>
         <div class="content-section">
             <div class="blue-box">
-                <p>If necessary, you may log out of all of your other browser sessions across all of your devices. Some of your recent sessions are listed below; however, this list may not be exhaustive. If you feel your account has been compromised, you should also update your password.</p>
-                <p><strong>Tasks that can be performed</strong></p>
-                <ul>
-                    <li>Sign out from all devices and browsers where you're currently logged in</li>
-                </ul>
+            <p>The normal location for downloading, in the Chrome browser, is your Downloads folder.</p>
             </div>
         </div>
-        <hr class="divider"/>
-        <div class="content-section">
-            <h3>Delete Account</h3>
+        <div class="image-section">
+            <img src="../assets/img/fleets/img19.png" class="inline-image"/>
         </div>
         <div class="content-section">
-            <img src="/documentation/assets/img/profile/img05.png" class="inline-image"/>
+            <p>Here is an example of a fleet export</p>
         </div>
-        <div class="content-section">
-            <div class="blue-box">
-                <p>Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.</p>
-                <p><strong>Tasks that can be performed</strong></p>
-                <ul>
-                    <li>Delete the user account</li>
-                </ul>
-            </div>
-         </div>
-        <div class="content-section">
-            <div class="red-box">
-                <p>Care should be taken when deleting accounts. Whilst the Delete operation <span class="button-style">soft-deletes</span> the users account, they may still require access to it.</p>
-            </div>
+        <div class="image-section">
+            <img src="../assets/img/fleets/img20.png" class="inline-image"/>
         </div>
     </div>
 <script>
-    function updateExternalResources(isDev) {
-        const links = document.querySelectorAll('link[rel="stylesheet"]');
-        links.forEach(link => {
-        let href = link.getAttribute("href");
-        if (isDev) {
-            href = href.replace("/documentation/assets/css/", "/assets/css/");
-        }
-        link.setAttribute("href", href);
-        });
-
-    const scripts = document.querySelectorAll("script");
-    scripts.forEach(script => {
-        let src = script.getAttribute("src");
-        if (src) {
-        if (!isDev) {
-            src = src.replace("/documentation/assets/js/", "/assets/js/");
-        }
-        script.setAttribute("src", src);
-        }
-    });
-}
-</script>
-<script>
-    includeHTML(isDev);
-    updateImageSources(isDev);
-    updateExternalResources(isDev);
+    includeHTML();
 </script>
 </body>
 </html> 
