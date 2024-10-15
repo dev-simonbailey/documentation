@@ -1,149 +1,403 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="../env.js"></script>
-<link rel="stylesheet" href="/documentation/assets/css/global.css">
-<link rel="stylesheet" href="/documentation/assets/css/menu.css">
-<link rel="stylesheet" href="/documentation/assets/css/content.css">
-<link rel="stylesheet" href="/documentation/assets/css/color-boxes.css">
-<link rel="stylesheet" href="/documentation/assets/css/divider.css">
-<link rel="stylesheet" href="/documentation/assets/css/button-style.css">
-<link rel="stylesheet" href="/documentation/assets/css/image.css">
-<script src="/documentation/assets/js/includeHTML.js"></script>
-<script src="/documentation/assets/js/environment.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+    <link rel="stylesheet" href="../assets/css/content.css">
+    <link rel="stylesheet" href="../assets/css/color-boxes.css">
+    <link rel="stylesheet" href="../assets/css/divider.css">
+    <link rel="stylesheet" href="../assets/css/button-style.css">
+    <link rel="stylesheet" href="../assets/css/image.css">
+    <script src="../assets/js/includeHTML.js"></script>
+    <script src="../assets/js/environment.js"></script>
 </head>
 <body>
-    <div w3-include-html="mega-menu.html"></div>
+    <div w3-include-html="../assets/html/mega-menu.html"></div>
     <div id='main' class="main-content">
         <div class="content-section">
             <h1>Sites</h1>
-            <p>The Profile section is user-specific and divided into 5 sections</p>
+            <p>The sites page gives details of the sites already created, as well as offering the ability to add new sites, either singly or via CSV import, as well as exporting the sites data to CSV.</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/sites/img01.png" class="inline-image"/>
         </div>
         <hr class="divider"/>
         <div class="content-section">
-            <h3>Profile Information</h3>
+            <h3>Searching by Project Code</h3>
+            <p>You can search for a specific site using the Project Code (Main Project Number)</p>
         </div>
-        <div class="content-section">
-            <img src="/documentation/assets/img/profile/img01.png" class="inline-image"/>
+        <div class="image-section">
+            <img src="../assets/img/sites/img02.png" class="inline-image"/>
         </div>
+        <hr class="divider"/>
         <div class="content-section">
+            <h1>Site Details</h1>
+            <p>Each site is detailed in the rows of the table and shows information as well as actions that can be taken.</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/sites/img03.png" class="inline-image"/>
+        </div>
+        < class="content-section">
             <div class="blue-box">
-                <p><strong>Tasks that can be performed</strong></p>
+                <p><strong>Columns</strong></p>
                 <ul>
-                    <li>Upload a profile image</li>
-                    <li>Change your name</li>
-                    <li>Change your email address</li>
+                    <li>
+                        Title
+                        <ul>
+                            <li>The Site Name</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Address
+                        <ul>
+                            <li>The Site Address</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Enabled
+                        <ul>
+                            <li>The status of the site in the portal</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Actions
+                        <ul>
+                            <li>View Site Dashboard</li>
+                            <li>Edit Site</li>
+                            <li>Remove Site</li>
+                        </ul>
+                    </li>
                 </ul>
-            <p>To save changes, click on the <span class="button-style">Save</span> button</p>
+            </div>
+            <hr class="divider"/>
+            <div class="content-section">
+                <h1>Actions</h1>
+                <p><strong>View Site Dashboard</strong></p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/sites/img04.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p>If clicked, a new tab will open and the sites dashboard will be shown.</p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/sites/img05.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p><strong>Edit Site</strong></p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/sites/img06.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p>If clicked, the Edit Site modal is displayed, where details of the site can be edited.</p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/sites/img07.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p><strong>Remove Site</strong></p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/sites/img08.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p>If clicked, a modal is shown that requires confirmation of the removal</p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/sites/img10.png" class="inline-image"/>
+            </div>           
+            <hr class="divider"/>
+            <div class="content-section">
+                <h1>Adding a Site</h1>
+                <p>Clicking on the <span class="button-style">ADD SITE</span> button will open the Create Site modal.</p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/sites/img11.png" class="inline-image"/>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/sites/img12.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p>To add a site, follow these steps.</p> 
+            </div>
+            <div class="content-section">
+                <p><strong>Step 1 - Enter a name for the site</strong></p> 
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/sites/img13.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p><strong>Step 2 - Setting Boundaries</strong></p> 
+                <p>The site address is required, and can be searched for by postcode, as well as full address.</p>
+                <p>There are two options for setting the boundaries</p>
+                <p>1. Selecting a radius.</p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/sites/img14.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p>Moving the slider to the right will increase the radius of the boundary.</p> 
+                <p>2. By defining a boundary.</p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/sites/img15.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p>  Pressing <span class="button-style">CONFIRM</span> will set the custom boundary, clicking on Pressing <span class="button-style">CONFIRM</span> will set the custom boundary, clicking on <span class="button-style">CLEAR</span> will clear the custom boundary defined, allowing a new custom boundary to be created will clear the custom boundary defined, allowing a new custom boundary to be created.</p>
+            </div>
+            <div class="content-section">  
+                <div class="blue-box">
+                    <p>To create a custom boundary, click on the map, adding corner points to define the custom boundary. Markers can be moved, once placed, by clicking and dragging them to the desired location.</p>
+                </div>
+            </div>
+            <div class="content-section">
+                <p><strong>Step 3 - Selecting the company the site belongs to</strong></p> 
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/sites/img16.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p><strong>Step 4 - Adding additional information</strong></p> 
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/sites/img17.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p><strong>Step 5 - Entering the project name and number</strong></p> 
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/sites/img18.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p><strong>Step 6 - Enabling the site within the portal</strong></p> 
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/sites/img19.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p><strong>Step 7 - Selecting a site manager</strong></p> 
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/sites/img20.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p><strong>Step 8 - Saving the new site</strong></p> 
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/sites/img21.png" class="inline-image"/>
+            </div>
+            <div class="content-section">  
+                <div class="blue-box">
+                    <p>Clicking on <span class="button-style">SAVE</span> will save the new site to the portal, clicking <span class="button-style">CANCEL</span> will stop the add new site process and return to the sites list.</p>
+                </div>
+            </div>
+            <hr class="divider"/>
+            <div class="content-section">
+                <h1>Importing Sites from a CSV</h1>
+                <p>Clicking on the <span class="button-style">IMPORT FROM CSV</span> button will open the Import Sites modal.</p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/sites/img22.png" class="inline-image"/>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/sites/img23.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p>Clicking on the paperclip, or within the file box, a CSV file can be selected form the local computer</p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/sites/img24.png" class="inline-image"/>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/sites/img25.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p>Clicking on <span class="button-style">SAVE</span> will import the sites to the portal. Clicking on <span class="button-style">CANCEL</span> will stop the import process and return to the sites list.</p>
+            </div>
+            <div class="content-section">  
+                <div class="blue-box">
+                    <p>
+                        The CSV file needs to be formatted in the following manner:
+                    </p>
+                    <p>
+                        <span class="button-style">
+                            id,title,address,latitude,longitude,radius,notes,main_project_name,main_project_number,enabled
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="content-section">
+                <div class="yellow-box">
+                    <p>Fields</p>
+                    <p>
+                        <ul>
+                            <li>id
+                                <ul>
+                                    <li>integer</li>
+                                    <li>Example: <span class="button-style">1</span></li>
+                                </ul>
+                            </li>
+                            <li>title
+                                <ul>
+                                    <li>string</li>
+                                    <li>Example: <span class="button-style">Safety Shield Office</span></li>
+                                </ul>
+                            </li>
+                            <li>address
+                                <ul>
+                                    <li>string</li>
+                                    <li>Example: <span class="button-style">Road Four, Winsford Industrial Estate, Winsford CW7 3RS, UK</span></li>
+                                </ul>
+                            </li>
+                            <li>latitude
+                                <ul>
+                                    <li>decimal</li>
+                                    <li>Example: <span class="button-style">53.2721833</span></li>
+                                </ul>
+                            </li>
+                            <li>longitude
+                                <ul>
+                                    <li>decimal</li>
+                                    <li>Example: <span class="button-style">-2.82148443</span></li>
+                                </ul>
+                            </li>
+                            <li>radius
+                                <ul>
+                                    <li>decimal</li>
+                                    <li>Example: <span class="button-style">0.5</span></li>
+                                </ul>
+                            </li>
+                            <li>notes
+                                <ul>
+                                    <li>string</li>
+                                    <li>Example: <span class="button-style">A velit et tenetur voluptatum...</span></li>
+                                </ul>
+                            </li>
+                            <li>main_project_name
+                                <ul>
+                                    <li>string</li>
+                                    <li>Example: <span class="button-style">My Project</span></li>
+                                </ul>
+                            </li>
+                            <li>main_project_number
+                                <ul>
+                                    <li>string</li>
+                                    <li>Example: <span class="button-style">1456</span></li>
+                                </ul>
+                            </li>
+                            <li>enabled
+                                <ul>
+                                    <li>integer</li>
+                                    <li>Example: <span class="button-style">1 (is enabled), 0 (is not enabled)</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                <hr class="divider"/>
+                <div class="content-section">
+                    <h1>Exporting Sites to a CSV</h1>
+                    <p>To export the list of sites, click on the <span class="button-style">EXPORT TO CSV</span> button. The CSV export process will then start and download the created CSV file to your computer, in to the location specified in your browser.</p>
+                </div>
+                <div class="content-section">  
+                    <div class="blue-box">
+                        <p>The normal location for downloading, in the Chrome browser, is your Downloads folder.</p>
+                    </div>
+                </div>
+                <div class="image-section">
+                    <img src="../assets/img/sites/img27.png" class="inline-image"/>
+                </div>
+                <div class="content-section">
+                    <p>This is an example of an exported sites CSV file</p>
+                </div>
+                <div class="image-section">
+                    <img src="../assets/img/sites/img28.png" class="inline-image"/>
+                </div>
+            </div>
+            <div class="content-section">
+                <h1>Change Hierarchy</h1>
+                <p>The hierarchy of the sites can be changed, to create associations with, click on the <span class="button-style">CHANGE HIERARCHY</span> button, to display the hierarchy modal</p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/sites/img29.png" class="inline-image"/>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/sites/img30.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p>By default, a site will be at the parent level of the hierarchy, but if desired, a site can be associated to another site (sub-site).</p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/sites/img31.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p>To save the modified hierarchy, click on the <span class="button-style">SAVE</span> button, clicking on the <span class="button-style">CANCEL</span> button will stop the change hierarchy process and return to the sites list.</p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/sites/img32.png" class="inline-image"/>
+            </div>
+            <hr class="divider"/>
+            <div class="content-section">
+                <h1>Pagination</h1>
+                <p>Several options are available to move through the list of sites</p>
+                <p>
+                    <ul>
+                        <li>Selecting the number of sites to show, via the drop down</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/sites/img33.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p>
+                    <ul>
+                        <li>Using the pagination controls</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/sites/img34.png" class="inline-image"/>
             </div>
         </div>
+
+
+
+        <!-- Templates
         <hr class="divider"/>
         <div class="content-section">
-            <h3>Update Password</h3>
+            <h3></h3>
         </div>
-        <div class="content-section">
-            <img src="/documentation/assets/img/profile/img02.png" class="inline-image"/>
+
+        <div class="image-section">
+            <img src="../assets/img/profile/img02.png" class="inline-image"/>
         </div>
+
         <div class="content-section">  
             <div class="blue-box">
-                <p><strong>Tasks that can be performed</strong></p>
-                <ul>
-                    <li>Updating of password</li>
-                <p>To save changes, click on the <span class="button-style">Save</span> button</p>
+                <p></p>
             </div>
         </div>
+
         <div class="content-section">
             <div class="yellow-box">
-                <p>To change the password, you must enter in the current password.</p>
+                <p></p>
             </div>
         </div>
-        <hr class="divider"/>
-        <div class="content-section">
-            <h3>Two Factor Authentication</h3>
-        </div>
-        <div class="content-section">
-            <img src="/documentation/assets/img/profile/img03.png" class="inline-image"/>
-        </div>
-        <div class="content-section">
-            <div class="blue-box">
-                <p>When two factor authentication is enabled, you will be prompted for a secure, random token during authentication. You may retrieve this token from your phone's Google Authenticator application.</p>
-                <p>Tasks that can be performed</p>
-                <ul>
-                    <li>This section allows Two Factor Authentication (2FA / MFA), to be enabled on this users account.</li>
-                </ul>
-            </div>
-        </div>
+
         <div class="content-section">
             <div class="red-box">
-                <p>As of the 23/09/2024, this feature is currently being investigated and is not currently in use.</p>
+                <p></p>
             </div>
         </div>
-        <hr class="divider"/>
-        <div class="content-section">
-            <h3>Browser Sessions</h3>
-        </div>
-        <div class="content-section">
-            <img src="/documentation/assets/img/profile/img04.png" class="inline-image"/>
-        </div>
-        <div class="content-section">
-            <div class="blue-box">
-                <p>If necessary, you may log out of all of your other browser sessions across all of your devices. Some of your recent sessions are listed below; however, this list may not be exhaustive. If you feel your account has been compromised, you should also update your password.</p>
-                <p><strong>Tasks that can be performed</strong></p>
-                <ul>
-                    <li>Sign out from all devices and browsers where you're currently logged in</li>
-                </ul>
-            </div>
-        </div>
-        <hr class="divider"/>
-        <div class="content-section">
-            <h3>Delete Account</h3>
-        </div>
-        <div class="content-section">
-            <img src="/documentation/assets/img/profile/img05.png" class="inline-image"/>
-        </div>
-        <div class="content-section">
-            <div class="blue-box">
-                <p>Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.</p>
-                <p><strong>Tasks that can be performed</strong></p>
-                <ul>
-                    <li>Delete the user account</li>
-                </ul>
-            </div>
-         </div>
-        <div class="content-section">
-            <div class="red-box">
-                <p>Care should be taken when deleting accounts. Whilst the Delete operation <span class="button-style">soft-deletes</span> the users account, they may still require access to it.</p>
-            </div>
-        </div>
+
+        <span class="button-style">Save</span>
+        -->
     </div>
 <script>
-    function updateExternalResources(isDev) {
-        const links = document.querySelectorAll('link[rel="stylesheet"]');
-        links.forEach(link => {
-        let href = link.getAttribute("href");
-        if (isDev) {
-            href = href.replace("/documentation/assets/css/", "/assets/css/");
-        }
-        link.setAttribute("href", href);
-        });
-
-    const scripts = document.querySelectorAll("script");
-    scripts.forEach(script => {
-        let src = script.getAttribute("src");
-        if (src) {
-        if (!isDev) {
-            src = src.replace("/documentation/assets/js/", "/assets/js/");
-        }
-        script.setAttribute("src", src);
-        }
-    });
-}
-</script>
-<script>
-    includeHTML(isDev);
-    updateImageSources(isDev);
-    updateExternalResources(isDev);
+    includeHTML();
 </script>
 </body>
 </html> 

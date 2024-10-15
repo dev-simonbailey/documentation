@@ -5,11 +5,12 @@
     background-size: 32px;
     background-color: #e9f2ff;
     padding-left: 50px;
-    border: 1px solid gray;
+    border: 1px solid lightgrey;
     margin:auto;
     margin-top:20px;
     margin-bottom:20px;
     max-width:760px;
+    border-radius: 5px;
   }
   
 .yellow-box {
@@ -19,10 +20,12 @@
     background-size: 32px;
     background-color: #fff7d6;
     padding-left: 50px;
-    border: 1px solid gray;
+    border: 1px solid lightgrey;
     margin:auto;
     margin-top:20px;
     margin-bottom:20px;
+    border-radius: 5px;
+
   }
   .red-box {
     background-image: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 2048 2048"><path fill="%23c9372c" d="M1024 0q141 0 272 36t244 104t207 160t161 207t103 245t37 272q0 141-36 272t-104 244t-160 207t-207 161t-245 103t-272 37q-141 0-272-36t-244-104t-207-160t-161-207t-103-245t-37-272q0-141 36-272t104-244t160-207t207-161T752 37t272-37m113 1024l342-342l-113-113l-342 342l-342-342l-113 113l342 342l-342 342l113 113l342-342l342 342l113-113z" /></svg>');
@@ -35,4 +38,5 @@
     margin:auto;
     margin-top:20px;
     margin-bottom:20px;
+    border-radius: 5px;
   }
