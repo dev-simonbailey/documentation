@@ -1,6 +1,10 @@
+@font-face {  
+  src: url(../assets/figtree/Figtree-VariableFont_wght.ttf) format("truetype");
+  font-family: Figtree;
+}
 * {
     box-sizing: border-box;
-    font-family: "Roboto", "sans-serif";
+    font-family: "Figtree", "arial", "sans-serif";
   }
 
 body {
@@ -18,10 +22,11 @@ ul {
 }
 .content-pill-yellow {
   background-color: #f1c40f;
-  color: white;
+  color: black;
   padding: 5px;
   border-radius: 5px;
   font-size:10px;
+  font-weight:bold
 }
 .content-pill-green {
   background-color: #2ecc71;
@@ -29,13 +34,15 @@ ul {
   padding: 5px;
   border-radius: 5px;
   font-size:10px;
+  font-weight:bold
 }
 .content-pill-red {
   background-color: #e74c3c;
-  color: white;
+  color: black;
   padding: 5px;
   border-radius: 5px;
   font-size:10px;
+  font-weight:bold
 }
 .content-pill-blue {
   background-color: #3498db;
@@ -43,6 +50,7 @@ ul {
   padding: 5px;
   border-radius: 5px;
   font-size:10px;
+  font-weight:bold
 }
 .content-pill-purple {
   background-color: #9b59b6;
@@ -50,6 +58,7 @@ ul {
   padding: 5px;
   border-radius: 5px;
   font-size:10px;
+  font-weight:bold
 }
 .content-pill-orange {
   background-color: #e67e22;
@@ -57,6 +66,7 @@ ul {
   padding: 5px;
   border-radius: 5px;
   font-size:10px;
+  font-weight:bold
 }
 .content-pill-grey {
   background-color: #95a5a6;
@@ -64,6 +74,7 @@ ul {
   padding: 5px;
   border-radius: 5px;
   font-size:10px;
+  font-weight:bold
 }
 .content-pill-black {
   background-color: #34495e;
@@ -71,4 +82,5 @@ ul {
   padding: 5px;
   border-radius: 5px;
   font-size:10px;
+  font-weight:bold
 }
