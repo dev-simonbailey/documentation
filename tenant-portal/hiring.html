@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+    <link rel="stylesheet" href="../assets/css/content.css">
+    <link rel="stylesheet" href="../assets/css/color-boxes.css">
+    <link rel="stylesheet" href="../assets/css/divider.css">
+    <link rel="stylesheet" href="../assets/css/button-style.css">
+    <link rel="stylesheet" href="../assets/css/image.css">
+    <script src="../assets/js/includeHTML.js"></script>
+</head>
+<body>
+    <div w3-include-html="../assets/html/mega-menu.html"></div>
+    <div id='main' class="main-content">
+        <div class="content-section">
+            <h1>Hiring</h1>
+            <p>The Hiring page details the vehicles that are hired <strong>from</strong> the tenant along with those vehicles hired <strong>to</strong> the tenant.</p>
+            <p>The page is split into two distinct areas, via tabs.</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/hiring/img01.png" class="inline-image"/>
+        </div>
+        <hr class="divider"/>
+        <div class="content-section">
+            <h1>My vehicles on hire</h1>
+            <p>The My Vehicles On Hire table shows, initially, the vehicles owned by the tenant that are on hire to other tenants.</p>
+            <p>To include historical hires, i.e. where the hire has ended or expired, check the show historical checkbox.</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/hiring/img02.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p>
+                <ul>
+                    <li>
+                        <span class="button-style">ID</span> of the hire
+                        <ul>
+                            <li>
+                                This is an internal reference in the portal
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="button-style">Registration</span>
+                        <ul>
+                            <li>
+                                The registration of the vehicle on hire
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="button-style">Hired to</span>
+                        <ul>
+                            <li>
+                                The tenant that has hired the vehicle
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="button-style">Start time</span>
+                        <ul>
+                            <li>
+                                The date / time the hire started
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="button-style">End time</span>
+                        <ul>
+                            <li>
+                                The date / time the hire ended. If no date is shown, then the hiring period has an unspecified end date.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="button-style">Is active</span>
+                        <ul>
+                            <li>
+                                The hire is active status
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="button-style">Actions</span>
+                        <ul>
+                            <li>
+                                <span class="button-style">Edit</span> - view the hire details
+                            </li>
+                            <li>
+                                <span class="button-style">Delete Hire</span> - end the hire
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/hiring/img03.png" class="inline-image"/>
+        </div>
+        <hr class="divider"/>
+        <div class="content-section">
+            <h1>Hired to <span class="button-style">ACTIONS</span></h1>
+            <p><strong>Edit Hire</strong>></p>
+            <p>Clicking the <span class="button-style">PENCIL</span> icon will open the Edit Vehicle On Hire modal</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/hiring/img04.png" class="inline-image"/>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/hiring/img05.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p>The modal shows the vehicle registration, along with when the hire period started and ended (no end date is shown if the <span class="button-style">Unspecified end date</span> toggle is enabled)</p>
+            <p>All of the hiring options can be edited, but note the end date and time must be in the future, relative to the start date and time.</p>
+        </div>
+        <div class="content-section">
+            <p><strong>Start Immediately</strong></p>
+            <p>If the  <span class="button-style">Start Immediately</span> toggle is enabled, the hiring start date and time will be now, and the Start Date date picker will be disabled.</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/hiring/img06.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p><strong>Unspecified End Date</strong></p>
+            <p>If the  <span class="button-style">Unspecified End Date</span> toggle is enabled, the hiring end date and time be left empty, and the End Date date picker will be disabled.</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/hiring/img07.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p><strong>Selecting a date and time</strong></p>
+            <p>Using the date picker, you can select a date</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/hiring/img08.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p>and to select a time, click on the <span class="button-style">Clock</span> icon</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/hiring/img09.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p>and the date picker will swap to the time picker</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/hiring/img10.png" class="inline-image"/> 
+        </div>
+        <div class="content-section">
+            <p>and for speed, clicking on the time values will open a quick selection menu</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/hiring/img11.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p>To return to the date picker, click on the <span class="button-style">Calendar</span> icon</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/hiring/img12.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p>The same operations are available for the <span class="button-style">End date</span></p>
+            <p>Clicking the <span class="button-style">SUBMIT</span> button which will save the updates</p>
+        </div>
+        <hr class="divider"/>
+        <div class="content-section">
+            <p><strong>Add Hire</strong></p>
+            <p>To add a hire, click on the <span class="button-style">ADD HIRE</span> button, which will display the Add hire modal</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/hiring/img13.png" class="inline-image"/>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/hiring/img14.png" class="inline-image"/> 
+        </div>
+        <div class="content-section">
+            <p>To add a vehicle(s) to a hire, follow these steps</p>
+        </div>
+        <div class="content-section">
+            <p><strong>Step 1 - Selecting vehicle(s)</strong></p>
+        </div>
+        <div class="content-section">  
+            <div class="blue-box">
+                <p>Multiple vehicles may be selected</p>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/hiring/img15.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p><strong>Step 2 - Selecting tenant to hire to</strong></p>
+        </div>
+        <div class="content-section">  
+            <div class="blue-box">
+                <p>Only tenants that have been setup as <strong>Hire to</strong>, can be selected. If a tenant that is required is not present in the Select tenant list, then please contact your administrator</p>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/hiring/img16.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p><strong>Step 3 - Selecting Start and End dates and times for the hire</strong></p>
+        </div>
+        <div class="content-section">  
+            <div class="blue-box">
+                <p>If the hire period is to start immediately, then enabling the <span class="button-style">Start Immediately</span> toggle will set the start date and time to now.</p>
+                <p>If the hire period will not have a defined end date and time, the <span class="button-style">Unspecified End Date</span> toggle should be enabled.</p>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/hiring/img17.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p>If the hire start date and time are to be selected, use the date/time picker.</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/hiring/img18.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p>and to select a time, click on the <span class="button-style">Clock</span> icon</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/hiring/img19.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p>and the date picker will swap to the time picker</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/hiring/img20.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p>and for speed, clicking on the time values will open a quick selection menu</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/hiring/img21.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p>To return to the date picker, click on the <span class="button-style">Calendar</span> icon</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/hiring/img22.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p>Repeat for the End Date, if applicable</p>
+        </div>
+        <div class="content-section">
+            <p><strong>Step 4 - Enabling the hire</strong></p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/hiring/img23.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p>Clicking the <span class="button-style">SUBMIT</span> button will save the updates</p>
+        </div>
+        <hr class="divider"/>
+        <div class="content-section">
+            <p><strong>Deleting a hire</strong></p>
+            <p>To delete a hire, click on the <span class="button-style">TRASH</span> icon</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/hiring/img24.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <div class="red-box">
+                <p>The delete operation will delete the hire from the hiring tenant and the hired to tenant. There is no confirmation, so care should be taken</p>
+            </div>
+        </div>
+        <hr class="divider"/>
+        <div class="content-section">
+            <p><strong>Errors and Warnings</strong></p>
+            <p>As a hire period for a vehicle cannot overlap another hire period for the same vehicle, the modal will display notices if it detects any errors.</p>
+            <p>Example</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/hiring/img25.png" class="inline-image"/>
+        </div>
+        <hr class="divider"/>
+        <div class="content-section">
+            <h1>Vehicles hired to me</h1>
+            <p>The On Hire To Me tab details those vehicles that are on hire from another tenant</p>
+         </div>
+         <div class="content-section">  
+            <div class="blue-box">
+                <p>This is read only information and no operations are associated</p>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/hiring/img26.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p>The details are:</p>
+            <p>
+                <ul>
+                    <li>
+                        <span class="button-style">ID</span> of the hire
+                        <ul>
+                            <li>
+                                This is an internal reference in the portal
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="button-style">Registration</span>
+                        <ul>
+                            <li>
+                                The registration of the vehicle on hire
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="button-style">Hired from</span>
+                        <ul>
+                            <li>
+                                The tenant that has hired the vehicle
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="button-style">Start time</span>
+                        <ul>
+                            <li>
+                                The date / time the hire started
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="button-style">End time</span>
+                        <ul>
+                            <li>
+                                The date / time the hire ended. If no date is shown, then the hiring period has an unspecified end date.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="button-style">Is active</span>
+                        <ul>
+                            <li>
+                                The hire is active status
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+        </div>
+        <hr class="divider"/>
+        <div class="content-section">
+            <h1>Pagination</h1>
+            <p>Several options are available to move through the list of devices</p>
+            <p><ul><li>Selecting the number of devices to show, via the drop down</li></ul></p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/hiring/img27.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p><ul><li>Using the pagination navigation controls</li></ul></p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/hiring/img28.png" class="inline-image"/>
+        </div>
+
+
+
+
+        <!-- Templates
+        <hr class="divider"/>
+        <div class="content-section">
+            <h3></h3>
+        </div>
+
+        <div class="image-section">
+            <img src="../assets/img/tenant/profile/img02.png" class="inline-image"/>
+        </div>
+
+        <div class="content-section">  
+            <div class="blue-box">
+                <p></p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="yellow-box">
+                <p></p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="red-box">
+                <p></p>
+            </div>
+        </div>
+
+        <span class="button-style">Save</span>
+        -->
+    </div>
+<script>
+    includeHTML();
+</script>
+</body>
+</html> 
