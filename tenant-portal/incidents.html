@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+    <link rel="stylesheet" href="../assets/css/content.css">
+    <link rel="stylesheet" href="../assets/css/color-boxes.css">
+    <link rel="stylesheet" href="../assets/css/divider.css">
+    <link rel="stylesheet" href="../assets/css/button-style.css">
+    <link rel="stylesheet" href="../assets/css/image.css">
+    <script src="../assets/js/includeHTML.js"></script>
+</head>
+<body>
+    <div w3-include-html="../assets/html/mega-menu.html"></div>
+    <div id='main' class="main-content">
+        <div class="content-section">
+            <h1>Incidents</h1>
+            <p>
+                <ul>
+                    <li>The map</li>
+                    <li>Filtering and global actions</li>
+                    <li>Incidents list</li>
+                </ul>
+            </p>
+        </div>
+        <div class="content-section">
+            <h3>Map and Overview</h3>
+            <p>The Incident Details section shows the details of the incident, including the date and time of the incident, the vehicle involved, the driver, the location of the incident, and the incident type.</p>
+        </div>
+        <div class="content-section">  
+            <div class="blue-box">
+                <p>When the page loads, initially, it will default to no filtering and todays incidents.</p>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/incidents/img01.png" class="inline-image"/>
+        </div>
+        <hr class="divider"/>
+        <div class="content-section">
+            <h1>Map</h1>
+            <p>The map shows the last known GPS location of each vehicle. Zooming in will show a more precise location.</p>
+        </div>
+        <div class="content-section">  
+            <div class="blue-box">
+                <p>The normal map controls are available.</p>
+            </div>
+        </div>
+        <hr class="divider"/>
+        <div class="content-section">
+            <h1>Filtering and Global Actions</h1>
+            <p>The data displayed on the incidents page can be filtered with the following filters:</p>
+        </div>
+        <div class="content-section">  
+            <h3>Search by registration</h3>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/incidents/img02.png" class="inline-image"/>
+        </div>
+        <div class="content-section">  
+            <h3>By Date</h3>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/incidents/img03.png" class="inline-image"/>
+        </div>
+        <div class="content-section">  
+            <div class="blue-box">
+                <p>Three preset date ranges are available, but any date range can be set, by navigating in the date selector and selecting the date range manually</p>
+            </div>
+        </div>
+        <div class="content-section">  
+            <h3>Alert Type</h3>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/incidents/img04.png" class="inline-image"/>
+        </div>
+        <div class="content-section">  
+            <div class="blue-box">
+                <p>Filter by Type has 3 options</p>
+                <p>
+                    <ul>
+                        <li>
+                            Red
+                            <ul>
+                                <li>Show only RED alerts</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Amber
+                            <ul>
+                                <li>Show only YELLOW alerts</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Authorised entry
+                            <ul>
+                                <li>Show alerts where the operator authorised entry into the detection zones, irrespective of the alert type generated.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
+                <p>Red and Yellow alerts can be shown together, by selecting both checkboxes (this is the default behaviour fo the page when it initially loads).</p>
+                <p>If Authorised entry is selected, then the RED and YELLOW alerts options are deselected and only results where entry into the detection zones was authorised are shown</p>
+            </div>
+        </div>
+        <div class="content-section">  
+            <h3>By Fleet</h3>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/incidents/img05.png" class="inline-image"/>
+        </div>
+        <div class="content-section">  
+            <h3>By Site</h3>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/incidents/img06.png" class="inline-image"/>
+        </div>
+        <div class="content-section">  
+            <div class="blue-box">
+                <p>Multiple fleets may be selected</p>
+            </div>
+        </div>
+        <div class="content-section">  
+            <h3>By Channel</h3>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/incidents/img07.png" class="inline-image"/>
+        </div>
+        <div class="content-section">  
+            <div class="blue-box">
+                <p>Multiple channels may be selected</p>
+                <p>A channel refers to a camera</p>
+            </div>
+        </div>
+        <hr class="divider"/>
+        <div class="content-section">
+            <h1>Incidents List</h1>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/incidents/img08.png" class="inline-image"/>
+        </div>
+        <div class="content-section">  
+            <p>The incidents table details the following:</p>
+            <p>
+                <ul>
+                    <li>Time - The time the incident occurred</li>
+                    <li>Alert Type - Red / Yellow / Authorised entry</li>
+                    <li>Registation - The registration of the vehicle</li>
+                    <li>Fleet - The fleet the vehicle is currently assigned to</li>
+                    <li>Site - The site the vehcile is currently assigned to</li>
+                    <li>Location - The lat and long where the incident took place</li>
+                    <li>Channel - The channel (camera) that detected the incident</li>
+                    <li>Actions - View Incident, Request Incident video</li>
+                    <li>Device status - Green (Online), Red (Offline)</li>
+                </ul>
+            </p>
+        </div>
+        <hr class="divider"/>
+        <div class="content-section">
+            <h1>Actions</h1>
+            <h3>View Incident Details</h3>
+            <p>Clicking on the <span class="button-style">View</span> icon will display the vehicle details page</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/incidents/img09.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p>Further details can be found on the <a href="incident-details.html">Incident Details</a> page</p>
+        </div>
+        <div class="content-section">
+            <h3>Request Incident Video</h3>
+            <p>Clicking on the <span class="button-style">Camera</span> icon will display a context menu where a view or download request can be made that requires a selection as to the purpose of the video download request</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/incidents/img10.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p>Once a selection has been made, the context menu shows a selection that is required as to the purpose of the video download/view request</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/incidents/img11.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p>Making a selection will send a video download request to the administrator</p>
+        </div>
+        <hr class="divider"/>
+        <div class="content-section">
+            <h1>Pagination</h1>
+            <p>Several options are available to move through the list of devices</p>
+            <p><ul><li>Selecting the number of devices to show, via the drop-down</li></ul></p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/incidents/img12.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p><ul><li>Using the pagination navigation controls</li></ul></p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/incidents/img13.png" class="inline-image"/>
+        </div>
+        
+
+
+        <!-- Templates
+        <hr class="divider"/>
+        <div class="content-section">
+            <h3></h3>
+        </div>
+
+        <div class="image-section">
+            <img src="../assets/img/tenant/profile/img02.png" class="inline-image"/>
+        </div>
+
+        <div class="content-section">  
+            <div class="blue-box">
+                <p></p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="yellow-box">
+                <p></p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="red-box">
+                <p></p>
+            </div>
+        </div>
+
+        <span class="button-style">Save</span>
+        -->
+    </div>
+<script>
+    includeHTML();
+</script>
+</body>
+</html> 
