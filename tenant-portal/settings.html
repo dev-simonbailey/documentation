@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+    <link rel="stylesheet" href="../assets/css/content.css">
+    <link rel="stylesheet" href="../assets/css/color-boxes.css">
+    <link rel="stylesheet" href="../assets/css/divider.css">
+    <link rel="stylesheet" href="../assets/css/button-style.css">
+    <link rel="stylesheet" href="../assets/css/image.css">
+    <script src="../assets/js/includeHTML.js"></script>
+</head>
+<body>
+    <div w3-include-html="../assets/html/mega-menu.html"></div>
+    <div id='main' class="main-content">
+        <div class="content-section">
+            <h1>Settings</h1>
+            <p>
+                The Settings tab on the settings page allows the enabling and disabling of settings within the portal.
+            </p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/settings/img01.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p>Below follows a description of each setting available</p>
+        </div>
+        <div class="content-section">  
+            <div class="blue-box">
+                <p>Not all settings are available to all users.</p>
+                <p>
+                    <ul>
+                        <li>Some settings are Super Admin only</li>
+                        <li>Some settings are Admin only</li>
+                        <li>Some settings are controlled by the team permissions</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <hr class="divider"/>
+        <div class="content-section">
+            <h3>Allow vehicle owner to see incidents </h3>
+            <p><li>Enable this option to allow the company owning the vehicle to see incidents related to their vehicles.</li></p>
+            <h3>Video</h3>
+            <p><li>Enable this option to allow incident video requests</li></p>
+            <h3>Enable API</h3>
+            <p><li>Enable this option to allow API access</li></p>
+            <h3>Maximum API Video Requests per Hour</h3>
+            <p>
+                <li>
+                    Set the maximum number of video requests allowed per hour through the API.
+                    <ul>
+                        <li>Default is 10</li>
+                    </ul>
+                </li>
+            </p>
+            <h3>Allow vehicle owner to see incidents</h3>
+            <p><li>Enable this option to allow the company owning the vehicle to see incidents related to their vehicles.</li></p>
+            <h3>Auto approve API video requests</h3>
+            <p><li>Enable this option to auto approve video requests made through the API</li></p>
+            <h3>Auto approve user video requests</h3>
+            <p><li>Enable this option to auto approve video requests made by users</li></p>
+            <h3>Delete the incident if no people are found</h3>
+            <p><li>Enable this option to delete the incident if no people are found in the video</li></p>
+            <h3>Detect Person</h3>
+            <p><li>Enable this option to detect people within incidents</li></p>
+            <h3>Blur face</h3>
+            <p><li>Enable this option to blur faces within incidents</li></p>
+            <h3>Personal Protective Equipment detection</h3>
+            <p><li>Enable this option to automatically detect PPE such as face covers, head covers, and hand covers</li></p>
+            <h3>Enable Live Camera Feed</h3>
+            <p><li>Enable this option to allow access to the live camera feeds</li></p>
+            <!--PUSHER SECTION NOT INCLUDED-->
+            <h3>Show API Section</h3>
+            <p><li>Enable this option to show the API section</li></p>
+            <h3>Show Companies Section</h3>
+            <p><li>Enable this option to show the Companies section</li></p>
+            <h3>Show Dashboard Section</h3>
+            <p><li>Enable this option to show the Dashboard section</li></p>
+            <h3>Show Devices Section</h3>
+            <p><li>Enable this option to show the Devices section</li></p>
+            <h3>Show Events Section</h3>
+            <p><li>Enable this option to show the Events section</li></p>
+            <h3>Show Fleets Section</h3>
+            <p><li>Enable this option to show the Fleets section</li></p>
+            <h3>Show Hiring Section</h3>
+            <p><li>Enable this option to show the Hiring section</li></p>
+            <h3>Show Incidents Section</h3>
+            <p><li>Enable this option to show the Incidents section</li></p>
+            <h3>Show Insights Section</h3>
+            <p><li>Enable this option to show the Insights section</li></p>
+            <h3>Show Reports Section</h3>
+            <p><li>Enable this option to show the Reports section</li></p>
+            <h3>Show Settings Section</h3>
+            <p><li>Enable this option to show the Settings section</li></p>
+            <h3>Show Sites Section</h3>
+            <p><li>Enable this option to show the Sites section</li></p>
+            <h3>Show Teams Section</h3>
+            <p><li>Enable this option to show the Teams section</li></p>
+            <h3>Show Users Section</h3>
+            <p><li>Enable this option to show the Users section</li></p>
+            <h3>Show Vehicles Section</h3>
+            <p><li>Enable this option to show the Vehicles section</li></p>
+            <h3>Epsilon</h3>
+            <p><li>Maximum distance between two samples for them to be considered as in the same neighborhood</li></p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/settings/img02.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <h3>Min Samples</h3>
+            <p><ul><li>Minimum number of samples in a neighbourhood for a point to be considered as a core point (this includes the point itself)</li></ul></p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/settings/img03.png" class="inline-image"/>
+        </div>
+        <!--Pushover section not included-->
+        <div class="content-section">
+            <h3>Site Dashboard Incidents Update</h3>
+            <p><li>The number of minutes(????) between screen updates for new incidents</li></p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/settings/img06.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <h3>Store Incidents in Owner Database</h3>
+            <p><li>Enable this optionto store incident data in the vehicle owners database, when a vehicle is on hire to another tenant</li></p>
+        </div>
+        <div class="content-section">  
+            <div class="blue-box">
+                <p>Incident data is automatically saved to the tenant that is hiring the vehicles database.</p>
+            </div>
+        </div>
+
+
+        <!-- Templates
+        <hr class="divider"/>
+        <div class="content-section">
+            <h3></h3>
+        </div>
+
+        <div class="image-section">
+            <img src="../assets/img/tenant/profile/img02.png" class="inline-image"/>
+        </div>
+
+        <div class="content-section">  
+            <div class="blue-box">
+                <p></p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="yellow-box">
+                <p></p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="red-box">
+                <p></p>
+            </div>
+        </div>
+
+        <span class="button-style">Save</span>
+        -->
+    </div>
+<script>
+    includeHTML();
+</script>
+</body>
+</html> 
