@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+    <link rel="stylesheet" href="../assets/css/content.css">
+    <link rel="stylesheet" href="../assets/css/color-boxes.css">
+    <link rel="stylesheet" href="../assets/css/divider.css">
+    <link rel="stylesheet" href="../assets/css/button-style.css">
+    <link rel="stylesheet" href="../assets/css/image.css">
+    <script src="../assets/js/includeHTML.js"></script>
+</head>
+<body>
+    <div w3-include-html="../assets/html/mega-menu.html"></div>
+    <div id='main' class="main-content">
+        <div class="content-section">
+            <h1>API</h1>
+            <p>
+                The API Tab, within the Settings page, gives details and access to the API.
+            </p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/api/img01.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p>The page is divided into two sections</p>
+            <ul>
+                <li>Token and BaseURL</li>
+                <li>
+                    Vue API Documentation
+                    <ul>
+                        <li>
+                            The API documentation uses Swagger  
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <hr class="divider"/>
+        <div class="content-section">
+            <h3>Token and BaseURL</h3>
+            <p>
+                The Token and BaseURL section provides the following information
+            </p>
+            <ul>
+                <li>Token</li>
+                <li>BaseURL</li>
+            </ul>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/api/img02.png" class="inline-image"/>
+        </div>
+        <div class="content-section">  
+            <ul>
+                <li>
+                    <h3>Token</h3>
+                    <ul>
+                        <li>
+                            The Token is used to authenticate the API requests.
+                        </li>
+                    </ul>
+                </li>
+        </div>
+        <div class="content-section">
+            <div class="red-box">
+                <p>The token is specific to the tenant and great care should be taken to ensure that it is not leaked outside of the tenant company, as operations could be performed without the tenants authorisation.</p>
+            </div>
+        </div>
+        <div class="content-section">
+                <ul>
+                    <li>
+                        <h3>BaseURL</h3>
+                        <ul>
+                            <li>
+                                This is the URL that all API calls are constructed on.
+                                <ul>
+                                    <li>
+                                        Example: https://staging-demo.safetyshieldvue.com/api/vehicles
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <hr class="divider"/>
+            <div class="content-section">
+                <h3>Vue API Documentation</h3>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/tenant/api/img03.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p>
+                    The endpoints are defined in the DEFAULT section
+                </p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/tenant/api/img04.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p>
+                    and each endpoint, when expanded, gives details on the request, such as payload
+                </p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/tenant/api/img05.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p>
+                    and response
+                </p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/tenant/api/img06.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p>
+                    The schema for each request is available in the schema section
+                </p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/tenant/api/img07.png" class="inline-image"/>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/tenant/api/img08.png" class="inline-image"/>
+            </div>
+            <hr class="divider"/>
+            <div class="content-section">
+                <h3>Using the Swagger API UI</h3>
+                <h3>Step 1 - Get Authorisation</h3>
+                <p><ul><li>Copy the token</li></ul></p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/tenant/api/img09.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p><ul><li>Open the Authorise modal by clicking on the <span class="button-style">Authorise</span> button</li></ul></p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/tenant/api/img10.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p><ul><li>Paste the token into the Bearer Token value box</li></ul></p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/tenant/api/img11.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p><ul><li>Click the Authorize button</li></ul></p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/tenant/api/img12.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p><ul><li>Close the Authorise modal</li></ul></p>
+            </div>
+            <div class="content-section">
+                <h3>Step 2 - update the Host with the tenant baseURL</h3>
+                <p><ul><li>Copy the BaseURL, excluding the https://</li></ul></p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/tenant/api/img13.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p><ul><li>Remove any data in the Host box</li></ul></p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/tenant/api/img14.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p><ul><li>Paste the BaseURL into the Host box</li></ul></p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/tenant/api/img15.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p><ul><li>Resulting in the following - but with the tenant-specific BaseURL</li></ul></p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/tenant/api/img16.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <h3>Step 3 - Make a request</h3>
+                <p><ul><li>Select an endpoint, from the <span class="button-style">DEFAULT</span> section</li></ul></p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/tenant/api/img17.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p><ul><li>Click on the <span class="button-style">TRY IT OUT</span> button</li></ul></p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/tenant/api/img18.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p><ul><li>Alter any parameters that the request may require (this example is a simple GET, with no parameters) and press the <span class="button-style">EXECUTE</span> button</li></ul></p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/tenant/api/img19.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p><ul><li>The request will be made</li></ul></p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/tenant/api/img20.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p><ul><li>The response will be displayed</li></ul></p> 
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/tenant/api/img21.png" class="inline-image"/>
+            </div>
+            <div class="content-section">
+                <p><ul><li>The response may include multiple data sets, which you can see by scrolling the response section</li></ul></p>
+            </div>
+            <div class="image-section">
+                <img src="../assets/img/tenant/api/img22.png" class="inline-image"/>
+            </div>
+            <div class="content-section">  
+                <div class="blue-box">
+                    <p>More information on the use of Swagger is availble on the internet</p>
+                </div>
+            </div>
+
+
+        <!-- Templates
+        <hr class="divider"/>
+        <div class="content-section">
+            <h3></h3>
+        </div>
+
+        <div class="image-section">
+            <img src="../assets/img/tenant/profile/img02.png" class="inline-image"/>
+        </div>
+
+        <div class="content-section">  
+            <div class="blue-box">
+                <p></p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="yellow-box">
+                <p></p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="red-box">
+                <p></p>
+            </div>
+        </div>
+
+        <span class="button-style">Save</span>
+        -->
+    </div>
+<script>
+    includeHTML();
+</script>
+</body>
+</html> 
