@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+    <link rel="stylesheet" href="../assets/css/content.css">
+    <link rel="stylesheet" href="../assets/css/color-boxes.css">
+    <link rel="stylesheet" href="../assets/css/divider.css">
+    <link rel="stylesheet" href="../assets/css/button-style.css">
+    <link rel="stylesheet" href="../assets/css/image.css">
+    <script src="../assets/js/includeHTML.js"></script>
+</head>
+<>
+    <div w3-include-html="../assets/html/mega-menu.html"></div>
+    <div id='main' class="main-content">
+        <div class="content-section">
+            <h1>Reports</h1>
+            <p>
+                The report generator allows tenants to generate reports that are emailed to a specified email address at a scheduled time, containing data that is defined in the Report Wizard, accessed via the “Reports” menu item.
+            </p>
+        </div>
+        <div class="content-section">  
+            <div class="blue-box">
+                <p>The report system utilises a Task Sceduler, within the app, that collects the reports that are to be run that day. This tasks runs at 05:00 every day.</p>
+                <p>All the reports that are identified, as needing to be run that day, are held in a dispatch queue that monitors the time and when a report dispatch time matches the current time, the report is created and dispatched to the recipient.</p>
+            </div>
+        </div>
+        <div class="content-section">
+            <div class="red-box">
+                <p>A point of note is that if a report is created today, at 09:00, and the user specifies a dispatch time of 15:00, the report will not get queued until 05:00 the following day, and, therefore, will not run until 15:00 the following day.</p>
+            </div>
+        </div>
+        <div class="content-section">
+            <h1>Creating a report</h1>
+            <p><ul><li>Navigate to the Reports page, using the Reports item in the left hand navigation menu.</li></ul></p>
+            <p><ul><li>Click on the “Create Report” button.</li></ul></p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/reports/img01.png" class="inline-image"/>
+        </div>
+        <div class="content-section">  
+            <p><ul><li>A modal appears that displays the Report Wizard.</li></ul></p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/reports/img02.png" class="inline-image"/>
+        </div>
+        <div class="content-section">  
+            <p><ul><li>Select a Timeframe, from the drop-down - Over what time period do you wish to have data for.</li></ul></p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/reports/img03.png" class="inline-image"/>
+        </div>
+        <div class="content-section">  
+            <p><ul><li>Select a re-occurrence - How often the report is to be generated.</li></ul></p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/reports/img04.png" class="inline-image"/>
+        </div>
+        <div class="content-section">  
+            <p><ul><li>Select a dispatch Time - What time the report is to be generated.</li></ul></p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/reports/img05.png" class="inline-image"/>
+        </div>
+        <div class="content-section">  
+            <p><ul><li>Give the report a name - It's worth naming reports in a meaningful way.</li></ul></p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/reports/img06.png" class="inline-image"/>
+        </div>
+        <div class="content-section">  
+            <p><ul><li>Specify the subject line of the email that will be sent, with the report attached.</li></ul></p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/reports/img07.png" class="inline-image"/>
+        </div>
+        <div class="content-section">  
+            <p><ul><li>Add the recipients of the report - To add multiple, enter the email address and press the enter key, then add another email address, and so on.</li></ul></p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/reports/img08.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <h1>Press the <span class="button-style">NEXT</span> button to move to the next step</h1>
+            <p><ul><li>In this step, you can specify the Tenants that should be included in your report.</li></ul></p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/reports/img09.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <h1>Press the <span class="button-style">NEXT</span> button to move to the next step</h1>
+            <p><ul><li>In this step, you can specify the Sites that should be included in your report.</li></ul></p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/reports/img10.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <h1>Press the <span class="button-style">NEXT</span> button to move to the next step</h1>
+            <p><ul><li>In this step, you can specify the Vehicles that should be included in your report.</li></ul></p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/reports/img11.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <h1>Press the <span class="button-style">CREATE</span> button to complete the wizard and add your report</h1>
+            <p><ul><li>You will now see your report in the Reports Page.</li></ul></p>
+        </div>
+        <div class="content-section">  
+            <div class="blue-box">
+                <p>You can edit your report, at any time, and the changes will only be applied the next time your report is scheduled to be run.</p>
+            </div>
+        </div>
+        <div class="content-section">
+            <div class="red-box">
+                <p>If you delete a report, it cannot be recovered, so only delete reports that you do not want.</p>
+            </div>
+        </div>
+
+
+        <!-- Templates
+        <hr class="divider"/>
+        <div class="content-section">
+            <h3></h3>
+        </div>
+
+        <div class="image-section">
+            <img src="../assets/img/tenant/profile/img02.png" class="inline-image"/>
+        </div>
+
+        <div class="content-section">  
+            <div class="blue-box">
+                <p></p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="yellow-box">
+                <p></p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="red-box">
+                <p></p>
+            </div>
+        </div>
+
+        <span class="button-style">Save</span>
+        -->
+    </div>
+<script>
+    includeHTML();
+</script>
+</body>
+</html> 
