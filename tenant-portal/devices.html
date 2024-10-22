@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+    <link rel="stylesheet" href="../assets/css/content.css">
+    <link rel="stylesheet" href="../assets/css/color-boxes.css">
+    <link rel="stylesheet" href="../assets/css/divider.css">
+    <link rel="stylesheet" href="../assets/css/button-style.css">
+    <link rel="stylesheet" href="../assets/css/image.css">
+    <script src="../assets/js/includeHTML.js"></script>
+</head>
+<body>
+    <div w3-include-html="../assets/html/mega-menu.html"></div>
+    <div id='main' class="main-content">
+        <div class="content-section">
+            <h1>Devices</h1>
+            <p>
+                The Devices Tab, within the Settings page is divided into two sections
+            </p>
+        </div>
+        <div class="content-section">
+            <h3>Assigned Devices</h3>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/devices/img01.png" class="inline-image"/>
+        </div>
+        <div class="content-section">  
+            <h3>Unssigned Devices</h3>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/devices/img02.png" class="inline-image"/>
+        </div>
+        <hr class="divider"/>
+        <div class="content-section">
+            <h3>Assigned Devices Table</h3>
+            <p>
+                Each row of the table details devices that are assigned to vehicles
+            </p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/devices/img03.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p>
+                <ul>
+                    <li>
+                        UUID
+                        <ul>
+                            <li>The UUID of the device</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Vehicle
+                        <ul>
+                            <li>The vehicle the device is assigned to</li>
+                        </ul>
+                    </li>
+                    <li>
+                        First Online
+                        <ul>
+                            <li>The date and time the device was first online</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Last Online
+                        <ul>
+                            <li>The date and time the device was last online</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Expires
+                        <ul>
+                            <li>The date and time the device authorisation expires</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Enabled
+                        <ul>
+                            <li>The device is enabled in the portals</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Visible
+                        <ul>
+                            <li>
+                                The device is visible
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Deadman
+                        <ul>
+                            <li>
+                                Record if the deadman lever is activated
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Device Issues
+                        <ul>
+                            <li>
+                                Issues the device is currently experiencing
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Actions
+                        <ul>
+                            <li>
+                                Access Live Camera Feed
+                            </li>
+                            <li>
+                                Edit the device details
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+        </div>
+        <div class="content-section">  
+            <div class="blue-box">
+                <p>Any details highlighted in red are for devices that have reached or passed their expiry date</p>
+                <p>No data is provided for devices that have expired</p>
+            </div>
+        </div>
+        <div class="content-section">
+            <p>
+                If there are any devices that have reached or passed their expiry date, then a banner will be visible at the top of the page
+            </p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/devices/img04.png" class="inline-image"/>
+        </div>
+        <hr class="divider"/>
+        <div class="content-section">
+            <h1>Actions</h1>
+            <h3>Access Live Camera Feed</h3>
+            <p>
+                <ul><li>Access Live Camera Feed by clicking the <span class="button-style">CAMERA</span> icon</li></ul>
+            </p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/devices/img05.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p>
+                <ul><li>When clicked, it will then display the live feed modal, and clicking on any of the available cameras will initiate the live feed stream from the vehicle.</li></ul>
+            </p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/devices/img06.png" class="inline-image"/>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/devices/img07.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <h3>Edit the device details</h3>
+            <p>
+                <ul><li>Edit the device details by clicking the <span class="button-style">PENCIL</span> icon</li></ul>
+            </p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/devices/img08.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p>Operations that can be performed</p>
+            <ul>
+                <li>Adding or editing the note attached to the device</li>
+                <li>Assign the device to a vehicle</li>
+                <li>Enabling the device</li>
+                <li>Making the device visible on the portal</li>
+                <li>Enabling deadman</li>
+            </ul>
+            <p>Clicking on the <span class="button-style">SAVE</span> button will update the device details Clicking on the <span class="button-style">CANCEL</span> button will cancel the editing operation</p>
+        </div>
+        <hr class="divider"/>
+        <div class="content-section">
+            <h1>Unassigned Devices</h1>
+            <p>
+                The Unassigned Devices Table details devices that are not assigned to any vehicle
+            </p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/devices/img09.png" class="inline-image"/>
+        </div>
+        <div class="content-section">  
+            <div class="blue-box">
+                <p>The details and operations of Unassigned Devices is the same as Asssigned devices, so please refer to the sections above for further details.</p>
+            </div>
+        </div>
+        <hr class="divider"/>
+        <div class="content-section">
+            <h1>Filtering</h1>
+            <p>Devices can be filtered by selecting the desired filter from the drop-down menu</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/devices/img10.png" class="inline-image"/>
+        </div>
+        <hr class="divider"/>
+        <div class="content-section">
+            <h1>Pagination</h1>
+            <p>Several options are available to move through the list of devices</p>
+            <p><ul><li>Selecting the number of devices to show, via the drop down</li></ul></p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/devices/img11.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p><ul><li>Using the pagination navigation controls</li></ul></p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/devices/img12.png" class="inline-image"/>
+        </div>
+
+        <!-- Templates
+        <hr class="divider"/>
+        <div class="content-section">
+            <h3></h3>
+        </div>
+
+        <div class="image-section">
+            <img src="../assets/img/tenant/profile/img02.png" class="inline-image"/>
+        </div>
+
+        <div class="content-section">  
+            <div class="blue-box">
+                <p></p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="yellow-box">
+                <p></p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="red-box">
+                <p></p>
+            </div>
+        </div>
+
+        <span class="button-style">Save</span>
+        -->
+    </div>
+<script>
+    includeHTML();
+</script>
+</body>
+</html> 
