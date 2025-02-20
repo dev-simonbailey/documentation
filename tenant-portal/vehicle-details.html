@@ -19,31 +19,13 @@
     <div id='main' class="main-content">
         <div class="content-section">
             <h1>Vehicle Details</h1>
-            <p>The Vehicle details page is divided into 7 areas</p>
+            <p>The Vehicle details page is divided into 3 areas</p>
         </div>
         <div class="content-section">
             <p><strong>Map</strong></p>
         </div>
         <div class="image-section">
             <img src="../assets/img/tenant/vehicle-details/img01.png" class="inline-image"/>
-        </div>
-        <div class="content-section">
-            <p><strong>Latest incidents</strong></p>
-        </div>
-        <div class="image-section">
-            <img src="../assets/img/tenant/vehicle-details/img02.png" class="inline-image"/>
-        </div>
-        <div class="content-section">
-            <p><strong>Fleet history</strong></p>
-        </div>
-        <div class="image-section">
-            <img src="../assets/img/tenant/vehicle-details/img03.png" class="inline-image"/>
-        </div>
-        <div class="content-section">
-            <p><strong>Site history</strong></p>
-        </div>
-        <div class="image-section">
-            <img src="../assets/img/tenant/vehicle-details/img04.png" class="inline-image"/>
         </div>
         <div class="content-section">
             <p><strong>Hire status</strong></p>
@@ -54,7 +36,7 @@
         <hr class="divider"/>
         <div class="content-section">
             <h1>Map</h1>
-            <p>The map shows all the latest incidents for the vehicle selected. Zooming in will allow for a more detailed view.</p>
+            <p>The map shows the latest known location for the vehicle.</p>
         </div>
         <div class="image-section">
             <img src="../assets/img/tenant/vehicle-details/img06.png" class="inline-image"/>
@@ -73,11 +55,14 @@
                     <li>Vehicle registration</li>
                     <li>Last online time</li>
                     <li>Hire status</li>
-                    <li>Last know location (Lat & Long) - with link to show the last known position</li>
+                    <li>Last know address</li>
                     <li>Number of <span class="content-pill-red">RED</span> incidents today, for the selected vehicle</li>
                     <li>Number of <span class="content-pill-yellow">YELLOW</span> incidents today, for the selected vehicle</li>
+                    <li>Number of <span class="content-pill-yellow">AUTHORISED</span> incidents today, for the selected vehicle</li>
+                    <li>Devices currently assigned to the vehicle</li>
                     <li>The current fleet the vehicle is assigned to</li>
                     <li>The current site the vehicle is assigned to</li>
+                    <li>View Incidents button – when clicked, <a href="incidents.html">incidents page</a> for the vehicle in the last 7 days will be displayed.</li>
                 </ul>
             </p>
         </div>
@@ -98,101 +83,6 @@
         </div>
         <div class="image-section">
             <img src="../assets/img/tenant/vehicle-details/img10.png" class="inline-image"/>
-        </div>
-        <hr class="divider"/>
-        <div class="content-section">
-            <h1>Latest Incidents</h1>
-            <p>This table details the latest incidents, for the vehicle and has actions that can be performed.</p>
-        </div>
-        <div class="image-section">
-            <img src="../assets/img/tenant/vehicle-details/img11.png" class="inline-image"/>
-        </div>
-        <div class="content-section">
-            <p><strong>The details are:</strong></p>
-            <p>
-                <ul>
-                    <li>Time of incident</li>
-                    <li>Severity of incident</li>
-                    <li>Site incident occurred at</li>
-                    <li>Location - Lat & Long</li>
-                    <li>
-                        Actions
-                        <ul>
-                            <li>View the incident details</li>
-                            <li>Request incident video download (available if feature eanbled in settings)</li>
-                            <li>Play button to play downloaded incident videos (Where a requested video is available)</li>
-                            <li>View incident image</li>
-                        </ul>
-                    </li>
-                </ul>
-            </p>
-        </div>
-        <hr class="divider"/>
-        <div class="content-section">
-            <h1>Actions</h1>
-            <p><strong>View the incident details</strong></p>
-            <p><ul><li>Please refer to <a href="incident-details.html">Incident Details</a> for further information</li></ul></p>
-        </div>
-        <div class="image-section">
-            <img src="../assets/img/tenant/vehicle-details/img12.png" class="inline-image"/>
-        </div>
-        <div class="content-section">
-            <p><strong>Request incident video download</strong></p>
-            <p>Clicking on the <span class="button-style">CAMERA</span> icon will display a context menu where a view or download request can be made that requires a selection as to the purpose of the video download request</p>
-        </div>
-        <div class="image-section">
-            <img src="../assets/img/tenant/vehicle-details/img13.png" class="inline-image"/>
-        </div>
-        <div class="content-section">
-            <p><ul><li>Once a selection has been made, the context menu shows a selection that is required as to the purpose of the video download/view request</li></ul></p>
-        </div>
-        <div class="image-section">
-            <img src="../assets/img/tenant/vehicle-details/img14.png" class="inline-image"/>
-        </div>
-        <div class="content-section">
-            <p><ul><li>Making a selection will send a video download request to the administrator</li></ul></p>
-        </div>
-        <div class="image-section">
-            <img src="../assets/img/tenant/vehicle-details/img15.png" class="inline-image"/>
-        </div>
-        <div class="content-section">
-            <p><strong>Play downloaded video</strong></p>
-            <p><ul><li>Clicking on the <span class="button-style">PLAY</span> icon will open a new tab and play the downloaded video.</li></ul></p>
-        </div>
-        <div class="image-section">
-            <img src="../assets/img/tenant/vehicle-details/img16.png" class="inline-image"/>
-        </div>
-        <div class="image-section">
-            <img src="../assets/img/tenant/vehicle-details/img17.png" class="inline-image"/>
-        </div>
-        <div class="content-section">
-            <p><strong>View incident image</strong></p>
-            <p><ul><li>Clicking on the <span class="button-style">IMAGE</span> icon will display the image attached to the incident.</li></ul></p>
-        </div>
-        <div class="image-section">
-            <img src="../assets/img/tenant/vehicle-details/img18.png" class="inline-image"/>
-        </div>
-        <hr class="divider"/>
-        <div class="content-section">
-            <h1>Fleet History</h1>
-            <p>The fleet history table shows the movement of the vehicle across fleets</p>
-        </div>
-        <div class="image-section">
-            <img src="../assets/img/tenant/vehicle-details/img19.png" class="inline-image"/>
-        </div>
-        <div class="content-section">
-            <p>Pagination is available at the bottom of the table</p>
-        </div>
-        <hr class="divider"/>
-        <div class="content-section">
-            <h1>Site History</h1>
-            <p>The site history table shows the movement of the vehicle across sites</p>
-        </div>
-        <div class="image-section">
-            <img src="../assets/img/tenant/vehicle-details/img20.png" class="inline-image"/>
-        </div>
-        <div class="content-section">
-            <p>Pagination is available at the bottom of the table</p>
         </div>
 
         <hr class="divider"/>
