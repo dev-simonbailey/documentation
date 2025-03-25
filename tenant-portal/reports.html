@@ -20,81 +20,147 @@
         <div class="content-section">
             <h1>Reports</h1>
             <p>
-                The report generator allows reports to be generated that are emailed to a specified email address at a scheduled time.
+                The Reports page displays all scheduled reports that will be automatically generated and emailed to specified recipients based on their schedule.
+                Each email contains a PDF file by default, and optionally, a CSV data file.
             </p>
+        </div>
+        <div class="content-section">
+            <h1>Reports Table</h1>
+            <p>The reports table displays all scheduled reports along with their configuration and available actions.</p>
         </div>
         <div class="image-section">
             <img src="../assets/img/tenant/reports/img01.png" class="inline-image"/>
         </div>
         <div class="content-section">
-            <h1>Creating a report</h1>
-            <h3>Report Name</h3>
-            <p>Give the report a name - It's worth naming reports in a meaningful way</p>
+            <p>The table includes the following columns:</p>
+            <ul>
+                <li>
+                    ID
+                    <ul>
+                        <li>Unique identifier of the report.</li>
+                    </ul>
+                </li>
+                <li>
+                    Report Name
+                    <ul>
+                        <li>The name given to the report when it was created.</li>
+                    </ul>
+                </li>
+                <li>
+                    Created By
+                    <ul>
+                        <li>The user who created the report schedule.</li>
+                    </ul>
+                </li>
+                <li>
+                    Recipients
+                    <ul>
+                        <li>Email addresses the report is sent to. Multiple recipients are separated by a semicolon.</li>
+                    </ul>
+                </li>
+                <li>
+                    Reoccurrence
+                    <ul>
+                        <li>The selected schedule for the report - Daily, Weekly, or Monthly.</li>
+                    </ul>
+                </li>
+                <li>
+                    Last Sent At
+                    <ul>
+                        <li>The date and time when the report was last sent.</li>
+                    </ul>
+                </li>
+                <li>
+                    Actions
+                    <ul>
+                        <li>
+                            <span class="button-style">Edit</span> - Modify the schedule or recipients of the report.
+                        </li>
+                        <li>
+                            <span class="button-style">Delete</span> - Remove the report schedule.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
+        <hr class="divider"/>
+        <div class="content-section">
+            <h1>Creating a Report</h1>
+            <p>Creating a new report is only available from the <span class="button-style">Dashboard</span> page.</p>
+            <p>Please refer to the <a href="/tenant-portal/dashboard.html">Dashboard</a> page documentation for more information.</p>
+        </div>
+        <hr class="divider"/>
+        <div class="content-section">
+            <h1>Actions</h1>
+            <h3><strong>Edit Report</strong></h3>
+            <p>Clicking on the <span class="button-style">PENCIL</span> icon will open the report edit modal, allowing you to modify the report’s schedule, recipients, subject line, and attachment settings.</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/reports/img12.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <strong>Report Details</strong>
+            <p>Enter the report a name - It's worth naming reports in a meaningful way</p>
+         </div>
         <div class="image-section">
             <img src="../assets/img/tenant/reports/img02.png" class="inline-image"/>
         </div>
         <div class="content-section">
-            <h3>Recipients Email Address</h3>
-            <p>Enter the email address the report will be sent</p>
+            <strong>Recipient Email Addresses</strong>
+            <p>Multiple email addresses can be separated by a semicolon.</p>
         </div>
         <div class="image-section">
             <img src="../assets/img/tenant/reports/img03.png" class="inline-image"/>
         </div>
         <div class="content-section">
-            <h3>Subject Line</h3>
+            <strong>Subject Line</strong>
             <p>The subject line for the email</p>
         </div>
         <div class="image-section">
             <img src="../assets/img/tenant/reports/img04.png" class="inline-image"/>
         </div>
         <div class="content-section">
-            <h3>Report Occurance</h3>
+            <strong>Report Occurance</strong>
             <p>Three options are available</p>
-            <h3>Once per day</h3>
+            <strong>Once per day</strong>
             <p>This option allows the days the report is to by run, along with the time the report is to be generated</p>
         </div>
         <div class="image-section">
             <img src="../assets/img/tenant/reports/img05.png" class="inline-image"/>
         </div>
         <div class="content-section">
-            <h3>Once per week</h3>
+            <strong>Once per week</strong>
             <p>This option allows the day of the week the report is to be run, along with the time the report is to be generated</p>
         </div>
         <div class="image-section">
             <img src="../assets/img/tenant/reports/img06.png" class="inline-image"/>
         </div>
         <div class="content-section">
-            <h3>Once per month</h3>
+            <strong>Once per month</strong>
             <p>This option allows the day of the month the report is to be run, along with the time the report is to be generated</p>
         </div>
         <div class="image-section">
             <img src="../assets/img/tenant/reports/img07.png" class="inline-image"/>
         </div>
         <div class="content-section">
-            <h3>Report Period</h3>
-            <p>Four options are available</p>
-            <p>
-                <ul>
-                    <li>This report will include all incidents from the previous day</li>
-                    <li>This report will include all incidents from the previous 24 hours</li>
-                    <li>This report will include all incidents since the report was last run</li>
-                    <li>This report will include all incidents from the day the report is run</li>
-                </ul>
-            </p>
+            <strong>Save or Cancel Changes</strong>
+            <p>After editing the report, click <span class="button-style">Save</span> to apply your changes or <span class="button-style">Cancel</span> to discard them.</p>
         </div>
         <div class="image-section">
-            <img src="../assets/img/tenant/reports/img08.png" class="inline-image"/>
+            <img src="../assets/img/tenant/reports/img11.png" class="inline-image"/>
+        </div>
+
+        <div class="blue-box">
+            <p><strong>Note:</strong> Editing a report does not change the data scope. To modify the data included in the report, create a new report from the <span class="button-style">Dashboard</span> page.</p>
+        </div>
+
+        <div class="red-box">
+            <p><strong>Note:</strong> The reports generated will not respect user-specific permissions. Ensure recipients are carefully selected.</p>
         </div>
         <div class="content-section">
-            <h3>Create report</h3>
-            <p>Click on the <span class="button-style">CREATE</span> button to create the report</p>
+            <h3><strong>Delete Report</strong></h3>
+            <p>Clicking the <span class="button-style">Delete</span> icon will permanently remove the scheduled report.</p>
         </div>
-        <div class="image-section">
-            <img src="../assets/img/tenant/reports/img09.png" class="inline-image"/>
-        </div>
-
-
 
 
         <!-- Templates
