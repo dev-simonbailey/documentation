@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+    <link rel="stylesheet" href="../assets/css/content.css">
+    <link rel="stylesheet" href="../assets/css/color-boxes.css">
+    <link rel="stylesheet" href="../assets/css/divider.css">
+    <link rel="stylesheet" href="../assets/css/button-style.css">
+    <link rel="stylesheet" href="../assets/css/image.css">
+    <script src="../assets/js/includeHTML.js"></script>
+</head>
+<body>
+<div w3-include-html="../assets/html/mega-menu.html"></div>
+<div id='main' class="main-content">
+    <div class="content-section">
+        <h1>Alarm Hierarchy</h1>
+        <p>Alarm Hierarchy allows you to set up an escalation chain for incident notifications. When an incident occurs,
+            the system notifies users in order of priority. If a user doesn't acknowledge the incident within a
+            specified time, the notification escalates to the next person in the hierarchy.</p>
+    </div>
+    <div class="content-section">
+        <p><strong>Key concepts:</strong></p>
+        <p>
+        <ul>
+            <li>
+                <span class="button-style">Priority</span> - determines who gets notified first (lower number = higher
+                priority)
+            </li>
+            <li>
+                <span class="button-style">Interval</span> - time in minutes before escalating to the next user
+            </li>
+            <li>
+                <span class="button-style">Max Count</span> - daily notification limit per user for non-acknowledged
+                incidents.
+            </li>
+        </ul>
+        </p>
+    </div>
+    <hr class="divider"/>
+    <div class="content-section">
+        <h1>How It Works</h1>
+        <p>
+        <ul>
+            <li>An incident occurs at a monitored site</li>
+            <li>System finds users configured for that site and incident type</li>
+            <li>User with Priority 1 receives a push notification on their mobile device</li>
+            <li>If an incident is not acknowledged within the defined <span class="button-style">interval</span>, the
+                notification is escalated to the next priority user
+            </li>
+            <li>If the number of non-acknowledged incidents exceeds the maximum threshold (<span class="button-style">Max Count</span>),
+                the notification is escalated to the next priority user.
+            </li>
+            <li>This continues until the incident is acknowledged or all users have been notified</li>
+        </ul>
+        </p>
+    </div>
+    <hr class="divider"/>
+    <div class="content-section">
+        <h1>Accessing Alarm Hierarchy Settings</h1>
+        <p>Navigate to <strong>Settings > Mobile App</strong> to access the Alarm Hierarchy configuration page.</p>
+    </div>
+    <hr class="divider"/>
+    <div class="content-section">
+        <h1>Alarm Hierarchy Table Overview</h1>
+        <p>The main table displays all configured users with the following information:</p>
+        <p>
+        <ul>
+            <li>
+                <span class="button-style">User</span> - User receiving notifications
+            </li>
+            <li>
+                <span class="button-style">Sites</span> - Sites this user monitors
+            </li>
+            <li>
+                <span class="button-style">Priority</span> - Escalation order (1 = first)
+            </li>
+            <li>
+                <span class="button-style">Max count</span> - Daily notification limit
+            </li>
+            <li>
+                <span class="button-style">Notify red incidents</span> - Receives critical alerts
+            </li>
+            <li>
+                <span class="button-style">Notify yellow incidents</span> - Receives warning alerts
+            </li>
+            <li>
+                <span class="button-style">Actions</span> - Edit, delete, resend invitation
+            </li>
+        </ul>
+        </p>
+    </div>
+    <div class="image-section">
+        <img src="../assets/img/tenant/alarm-hierarchy/img01.png" class="inline-image"/>
+    </div>
+    <hr class="divider"/>
+    <div class="content-section">
+        <h1>Adding a User (Web Interface)</h1>
+        <p>Click the <span class="button-style">Add</span> button to configure a new user for mobile notifications.</p>
+    </div>
+    <div class="image-section">
+        <img src="../assets/img/tenant/alarm-hierarchy/img02.png" class="inline-image"/>
+    </div>
+    <div class="content-section">
+        <p><strong>User</strong></p>
+        <p>Select the user who will receive mobile notifications.</p>
+    </div>
+    <div class="content-section">
+        <div class="blue-box">
+            <p>The user must already exist in the system.</p>
+        </div>
+    </div>
+    <div class="image-section">
+        <img src="../assets/img/tenant/alarm-hierarchy/img03.png" class="inline-image"/>
+    </div>
+    <div class="content-section">
+        <p><strong>Sites</strong></p>
+        <p>Select one or more sites this user will monitor. Only sites the user has access to will be available.</p>
+    </div>
+    <div class="image-section">
+        <img src="../assets/img/tenant/alarm-hierarchy/img04.png" class="inline-image"/>
+    </div>
+    <div class="content-section">
+        <p><strong>Priority</strong></p>
+        <p>Enter the priority level (1, 2, 3, etc.). Users with lower numbers receive notifications first.</p>
+    </div>
+    <div class="content-section">
+        <div class="blue-box">
+            <p>Priority is set within the scope of a single site. If a user monitors multiple sites, their priority may differ for each site.</p>
+            <p><strong>Example:</strong> If you have three users with priorities 1, 2, and 3 for Site A, the user with priority 1 will always be notified first for incidents at Site A.</p>
+        </div>
+    </div>
+    <div class="image-section">
+        <img src="../assets/img/tenant/alarm-hierarchy/img05.png" class="inline-image"/>
+    </div>
+    <div class="content-section">
+        <p><strong>Interval</strong></p>
+        <p>Enter the escalation interval in minutes. This is how long the system waits before notifying the next user if this user doesn't acknowledge the incident.</p>
+    </div>
+    <div class="image-section">
+        <img src="../assets/img/tenant/alarm-hierarchy/img06.png" class="inline-image"/>
+    </div>
+    <div class="content-section">
+        <div class="yellow-box">
+            <p><strong>Requirements:</strong></p>
+            <ul>
+                <li>Minimum interval: 10 minutes</li>
+                <li>The interval must be a multiple of 10 (10, 20, 30, etc.)</li>
+                <li>Higher-priority users must have shorter intervals than lower-priority users</li>
+            </ul>
+            <p><strong>Example (correct):</strong> Priority 1 - 10 minutes, Priority 2 - 20 minutes</p>
+            <p><strong>Example (incorrect):</strong> Priority 1 - 20 minutes, Priority 2 - 10 minutes</p>
+        </div>
+    </div>
+    <div class="content-section">
+        <p><strong>Max Count</strong></p>
+        <p>Enter the maximum number of notifications this user can receive per day for non-acknowledged incidents. Once reached, notifications are escalated to
+            the next user in the hierarchy.</p>
+    </div>
+    <div class="image-section">
+        <img src="../assets/img/tenant/alarm-hierarchy/img07.png" class="inline-image"/>
+    </div>
+    <div class="content-section">
+        <p><strong>Incident Types</strong></p>
+        <p>Select which incident types the user should be notified about:</p>
+        <p>
+        <ul>
+            <li><span class="button-style">Notify red incidents</span> - Critical alerts</li>
+            <li><span class="button-style">Notify yellow incidents</span> - Warning alerts</li>
+        </ul>
+        </p>
+    </div>
+    <div class="image-section">
+        <img src="../assets/img/tenant/alarm-hierarchy/img08.png" class="inline-image"/>
+    </div>
+    <div class="content-section">
+        <p><strong>Saving the Configuration</strong></p>
+        <p>Click <span class="button-style">Save</span> to add the user. They will receive an email invitation with
+            credentials to access the mobile app.</p>
+    </div>
+    <div class="image-section">
+        <img src="../assets/img/tenant/alarm-hierarchy/img09.png" class="inline-image"/>
+    </div>
+    <hr class="divider"/>
+    <div class="content-section">
+        <h1>Editing a Configuration</h1>
+        <p>Click the <span class="button-style">Edit</span> icon (pencil) to modify an existing configuration. All
+            fields except User can be changed.</p>
+    </div>
+    <div class="image-section">
+        <img src="../assets/img/tenant/alarm-hierarchy/img10.png" class="inline-image"/>
+    </div>
+    <hr class="divider"/>
+    <div class="content-section">
+        <h1>Resending Invitation</h1>
+        <p>Click the <span class="button-style">Resend invitation</span> icon to send a new email with
+            temporary password if the user lost access.</p>
+    </div>
+    <div class="image-section">
+        <img src="../assets/img/tenant/alarm-hierarchy/img11.png" class="inline-image"/>
+    </div>
+    <hr class="divider"/>
+    <div class="content-section">
+        <h1>Removing Access</h1>
+        <p>Click the <span class="button-style">Delete</span> icon to revoke mobile app access.</p>
+    </div>
+    <div class="image-section">
+        <img src="../assets/img/tenant/alarm-hierarchy/img12.png" class="inline-image"/>
+    </div>
+    <div class="content-section">
+        <p>A confirmation dialog will appear. Click <span class="button-style">Confirm</span> to proceed with deletion.</p>
+    </div>
+    <div class="content-section">
+        <div class="red-box">
+            <p>This immediately stops all mobile notifications for this user.</p>
+        </div>
+    </div>
+    <div class="image-section">
+        <img src="../assets/img/tenant/alarm-hierarchy/img13.png" class="inline-image"/>
+    </div>
+
+    <hr class="divider"/>
+    <div class="content-section">
+        <h1>Adding a User (API)</h1>
+        <p>You can also configure Alarm Hierarchy using the API. This section describes the workflow for creating a new hierarchy entry.</p>
+    </div>
+    <div class="content-section">
+        <p><strong>Step 1: Get the list of users</strong></p>
+        <p>First, retrieve the list of available users to find the <span class="button-style">user_id</span> for the user you want to add to the hierarchy.</p>
+    </div>
+    <div class="content-section">
+        <div class="blue-box">
+            <p><strong>Endpoint:</strong> GET /api/users</p>
+        </div>
+    </div>
+    <div class="image-section">
+        <img src="../assets/img/tenant/alarm-hierarchy/img16.png" class="inline-image"/>
+    </div>
+    <div class="content-section">
+        <p><strong>Step 2: Get available sites for the user</strong></p>
+        <p>Next, retrieve the sites that are accessible by the selected user. Use the <span class="button-style">accessible_by_user_id</span> parameter to filter sites.</p>
+    </div>
+    <div class="content-section">
+        <div class="blue-box">
+            <p><strong>Endpoint:</strong> GET /api/sites?accessible_by_user_id={user_id}</p>
+        </div>
+    </div>
+    <div class="content-section">
+        <p>This returns only the sites the user has permission to access. Use the returned <span class="button-style">site_ids</span> when creating the hierarchy.</p>
+    </div>
+    <div class="image-section">
+        <img src="../assets/img/tenant/alarm-hierarchy/img17.png" class="inline-image"/>
+    </div>
+    <div class="content-section">
+        <p><strong>Step 3: Create the Alarm Hierarchy</strong></p>
+        <p>Now create the alarm hierarchy entry with all required parameters.</p>
+    </div>
+    <div class="content-section">
+        <div class="blue-box">
+            <p><strong>Endpoint:</strong> POST /api/alarm-hierarchies</p>
+        </div>
+    </div>
+    <div class="content-section">
+        <p><strong>Request body parameters:</strong></p>
+        <p>
+        <ul>
+            <li><span class="button-style">user_id</span> - ID of the user (from Step 1)</li>
+            <li><span class="button-style">site_ids</span> - Array of site IDs to monitor (from Step 2)</li>
+            <li><span class="button-style">priority</span> - Escalation priority (1 = highest)</li>
+            <li><span class="button-style">interval</span> - Minutes before escalation (min: 10, multiple of 10)</li>
+            <li><span class="button-style">max_count</span> - Maximum daily notifications</li>
+            <li><span class="button-style">notify_red_alarms</span> - Boolean, notify for critical incidents</li>
+            <li><span class="button-style">notify_yellow_alarms</span> - Boolean, notify for warning incidents</li>
+        </ul>
+        </p>
+    </div>
+    <div class="image-section">
+        <img src="../assets/img/tenant/alarm-hierarchy/img18.png" class="inline-image"/>
+    </div>
+    <div class="content-section">
+        <p><strong>Step 4: Verify the configuration</strong></p>
+        <p>Retrieve all configured hierarchies to verify your entry was created successfully.</p>
+    </div>
+    <div class="content-section">
+        <div class="blue-box">
+            <p><strong>Endpoint:</strong> GET /api/alarm-hierarchies</p>
+        </div>
+    </div>
+    <div class="image-section">
+        <img src="../assets/img/tenant/alarm-hierarchy/img19.png" class="inline-image"/>
+    </div>
+
+    <hr class="divider"/>
+    <div class="content-section">
+        <h1>Alarm Feedback (Reasons/Actions)</h1>
+        <p>The Alarm Feedback section is located on the same page below the Alarm Hierarchy table.</p>
+        <p>Alarm Feedback allows you to configure predefined options that mobile app users can select when acknowledging incidents. This standardizes incident reporting and helps track common causes and responses.</p>
+    </div>
+    <div class="image-section">
+        <img src="../assets/img/tenant/alarm-hierarchy/img14.png" class="inline-image"/>
+    </div>
+    <div class="content-section">
+        <p><strong>Creating a Reason/Action</strong></p>
+        <p>Click <span class="button-style">Create a reason/action</span> to add a new feedback option.</p>
+        <p>
+        <ul>
+            <li>
+                <span class="button-style">Value</span> - Text displayed to the user
+            </li>
+            <li>
+                <span class="button-style">Type</span> - "Reason" or "Action"
+            </li>
+            <li>
+                <span class="button-style">Order</span> - Display order in the mobile app
+            </li>
+        </ul>
+        </p>
+    </div>
+    <div class="image-section">
+        <img src="../assets/img/tenant/alarm-hierarchy/img15.png" class="inline-image"/>
+    </div>
+</div>
+<script>
+    includeHTML();
+</script>
+</body>
+</html>
