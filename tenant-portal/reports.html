@@ -20,116 +20,246 @@
         <div class="content-section">
             <h1>Reports</h1>
             <p>
-                The report generator allows reports to be generated that are emailed to a specified email address at a scheduled time.
+                The system provides two ways to generate reports from the Dashboard:
             </p>
+            <ul>
+                <li><strong>Generate Report</strong> - Creates an instant PDF report that downloads directly to your device</li>
+                <li><strong>Schedule Report</strong> - Sets up automated reports that are emailed to specified recipients on a schedule</li>
+            </ul>
         </div>
         <div class="image-section">
             <img src="../assets/img/tenant/reports/img01.png" class="inline-image"/>
         </div>
+
+        <hr class="divider"/>
+
         <div class="content-section">
-            <h1>Creating a report</h1>
-            <h3>Report Name</h3>
-            <p>Give the report a name - It's worth naming reports in a meaningful way</p>
+            <h1>Generate Report (Instant Download)</h1>
+            <p>
+                The <span class="button-style">Generate Report</span> button creates an instant PDF report based on the current Dashboard view and downloads it directly to your device.
+            </p>
+        </div>
+        <div class="content-section">
+            <h3>How to Generate an Instant Report</h3>
+            <p>1. Navigate to the Dashboard</p>
+            <p>2. Apply the desired filters (Site, Fleet, Date, Machine Type)</p>
+            <p>3. Click the <span class="button-style">Generate Report</span> button</p>
+            <p>4. The PDF will be generated and automatically downloaded to your device</p>
+        </div>
+        <div class="content-section">
+            <h3>Report Contents</h3>
+            <p>The generated PDF includes:</p>
+            <ul>
+                <li>Dashboard widgets (Red Alerts, Yellow Alerts, Critical Vehicle/Fleet/Site)</li>
+                <li>Applied filters summary</li>
+                <li>Latest Incidents chart and bubble diagram</li>
+                <li>Top 5 vehicles with the most alerts</li>
+                <li>Total alerts per fleet</li>
+                <li>Total alerts per site</li>
+            </ul>
         </div>
         <div class="image-section">
             <img src="../assets/img/tenant/reports/img02.png" class="inline-image"/>
         </div>
         <div class="content-section">
-            <h3>Recipients Email Address</h3>
-            <p>Enter the email address the report will be sent</p>
+            <div class="blue-box">
+                <p>The report filename includes the current date and time, making it easy to identify when the report was generated.</p>
+            </div>
+        </div>
+
+        <hr class="divider"/>
+
+        <div class="content-section">
+            <h1>Schedule Report (Automated Email)</h1>
+            <p>
+                The <span class="button-style">Schedule Report</span> button allows you to create automated reports that will be generated and emailed to specified recipients on a regular schedule.
+            </p>
+        </div>
+        <div class="content-section">
+            <div class="yellow-box">
+                <p><strong>Note:</strong> The Schedule Report button is only available when a preset date filter is selected (Today, Last 7 Days, Last 30 Days, etc.). It is disabled when using a custom date range.</p>
+            </div>
+        </div>
+        <div class="content-section">
+            <div class="red-box">
+                <p><strong>Important:</strong> The output of scheduled reports will not take account of any specific user permissions for recipients. Please carefully consider the people receiving this report.</p>
+            </div>
+        </div>
+
+        <hr class="divider"/>
+
+        <div class="content-section">
+            <h1>Creating a Scheduled Report</h1>
+            <p>To create a scheduled report, click the <span class="button-style">Schedule Report</span> button on the Dashboard. A dialog window will appear with the following options:</p>
+        </div>
+
+        <div class="content-section">
+            <h3>Report Name</h3>
+            <p>Give the report a meaningful name that describes its purpose or content. This helps identify reports in the list.</p>
         </div>
         <div class="image-section">
             <img src="../assets/img/tenant/reports/img03.png" class="inline-image"/>
         </div>
+
         <div class="content-section">
-            <h3>Subject Line</h3>
-            <p>The subject line for the email</p>
+            <h3>Recipients Email Address</h3>
+            <p>Enter the email addresses where the report will be sent. Multiple email addresses can be entered, separated by a semicolon (;).</p>
+            <p>Example: <code>user1@example.com;user2@example.com</code></p>
         </div>
         <div class="image-section">
             <img src="../assets/img/tenant/reports/img04.png" class="inline-image"/>
         </div>
+
         <div class="content-section">
-            <h3>Report Occurance</h3>
-            <p>Three options are available</p>
-            <h3>Once per day</h3>
-            <p>This option allows the days the report is to by run, along with the time the report is to be generated</p>
+            <h3>Email Subject</h3>
+            <p>Enter the subject line for the email. This is optional but recommended for easy identification of report emails.</p>
         </div>
         <div class="image-section">
             <img src="../assets/img/tenant/reports/img05.png" class="inline-image"/>
         </div>
+
+        <hr class="divider"/>
+
         <div class="content-section">
-            <h3>Once per week</h3>
-            <p>This option allows the day of the week the report is to be run, along with the time the report is to be generated</p>
+            <h1>Report Occurrence</h1>
+            <p>Three scheduling options are available:</p>
+        </div>
+
+        <div class="content-section">
+            <h3>Daily</h3>
+            <p>This option allows you to select specific days of the week when the report should be generated, along with the time of day.</p>
+            <p>For example, you can set the report to run every weekday at 8:00 AM.</p>
         </div>
         <div class="image-section">
             <img src="../assets/img/tenant/reports/img06.png" class="inline-image"/>
         </div>
+
         <div class="content-section">
-            <h3>Once per month</h3>
-            <p>This option allows the day of the month the report is to be run, along with the time the report is to be generated</p>
+            <h3>Weekly</h3>
+            <p>This option generates the report once per week on a specific day and time.</p>
+            <p>Select the day of the week and the time when the report should be generated and sent.</p>
         </div>
         <div class="image-section">
-            <img src="../assets/img/tenant/reports/img07.png" class="inline-image"/>
+            <img src="../assets/img/tenant/reports/imgO7.png" class="inline-image"/>
         </div>
+
         <div class="content-section">
-            <h3>Report Period</h3>
-            <p>Four options are available</p>
-            <p>
-                <ul>
-                    <li>This report will include all incidents from the previous day</li>
-                    <li>This report will include all incidents from the previous 24 hours</li>
-                    <li>This report will include all incidents since the report was last run</li>
-                    <li>This report will include all incidents from the day the report is run</li>
-                </ul>
-            </p>
+            <h3>Monthly</h3>
+            <p>This option generates the report once per month on a specific day and time.</p>
+            <p>Select the day of the month (1-31) and the time when the report should be generated and sent.</p>
         </div>
         <div class="image-section">
             <img src="../assets/img/tenant/reports/img08.png" class="inline-image"/>
         </div>
         <div class="content-section">
-            <h3>Create report</h3>
-            <p>Click on the <span class="button-style">CREATE</span> button to create the report</p>
+            <div class="blue-box">
+                <p>Report times are available in 15-minute intervals from 00:15 to 23:45.</p>
+            </div>
+        </div>
+
+        <hr class="divider"/>
+
+        <div class="content-section">
+            <h1>Include Attachments</h1>
+            <h3>Include CSV file</h3>
+            <p>Enable this option to include a CSV file with the incident data alongside the PDF report. This allows recipients to analyse the data in spreadsheet applications.</p>
         </div>
         <div class="image-section">
             <img src="../assets/img/tenant/reports/img09.png" class="inline-image"/>
         </div>
 
-
-
-
-        <!-- Templates
         <hr class="divider"/>
+
         <div class="content-section">
-            <h3></h3>
+            <h1>Saving the Report</h1>
+            <p>Once all options are configured, click the <span class="button-style">Save</span> button to create the scheduled report.</p>
+            <p>The report will be created with the current Dashboard filters (Site, Fleet, Machine Type) applied automatically.</p>
         </div>
-
         <div class="image-section">
-            <img src="../assets/img/tenant/profile/img02.png" class="inline-image"/>
+            <img src="../assets/img/tenant/reports/img10.png" class="inline-image"/>
         </div>
 
-        <div class="content-section">  
-            <div class="blue-box">
-                <p></p>
-            </div>
+        <hr class="divider"/>
+
+        <div class="content-section">
+            <h1>Report Email</h1>
+            <p>When a scheduled report is sent, recipients will receive an email containing:</p>
+            <ul>
+                <li>The PDF report as an attachment</li>
+                <li>Optionally, a CSV file with incident data (if enabled)</li>
+            </ul>
         </div>
 
+        <hr class="divider"/>
+
+        <div class="content-section">
+            <h1>Managing Scheduled Reports</h1>
+            <p>Scheduled reports can be viewed and managed from the Reports section in the main navigation menu.</p>
+        </div>
+
+        <div class="content-section">
+            <h3>Reports Table Overview</h3>
+            <p>The table displays all configured scheduled reports with the following information:</p>
+            <p>
+            <ul>
+                <li><span class="button-style">ID</span> - Unique identifier for the report</li>
+                <li><span class="button-style">Report name</span> - The name assigned to the report</li>
+                <li><span class="button-style">Created By</span> - The user who created the report</li>
+                <li><span class="button-style">Recipients</span> - Email addresses receiving the report</li>
+                <li><span class="button-style">Reoccurrence</span> - Schedule frequency (Daily, Weekly, or Monthly)</li>
+                <li><span class="button-style">Last sent at</span> - Date and time of the last successful delivery</li>
+                <li><span class="button-style">Actions</span> - Edit and Delete buttons</li>
+            </ul>
+            </p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/reports/img11.png" class="inline-image"/>
+        </div>
+
+        <hr class="divider"/>
+
+        <div class="content-section">
+            <h1>Editing a Report</h1>
+            <p>Click the <span class="button-style">Edit</span> icon (pencil) to modify an existing scheduled report.</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/reports/img12.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
+            <p>When editing a report, you can modify the following settings:</p>
+            <ul>
+                <li>Report name</li>
+                <li>Recipients email addresses</li>
+                <li>Email subject</li>
+                <li>Report occurrence (Daily, Weekly, Monthly)</li>
+                <li>Schedule settings (days and time)</li>
+                <li>Include CSV file option</li>
+            </ul>
+        </div>
         <div class="content-section">
             <div class="yellow-box">
-                <p></p>
+                <p><strong>Note:</strong> The data filters (Site, Fleet, Machine Type) that were configured when the report was created cannot be changed. To use different filters, you need to create a new report from the Dashboard with the desired filter settings.</p>
             </div>
         </div>
+
+        <hr class="divider"/>
 
         <div class="content-section">
+            <h1>Deleting a Report</h1>
+            <p>Click the <span class="button-style">Delete</span> icon (trash) to remove a scheduled report.</p>
+        </div>
+        <div class="image-section">
+            <img src="../assets/img/tenant/reports/img13.png" class="inline-image"/>
+        </div>
+        <div class="content-section">
             <div class="red-box">
-                <p></p>
+                <p>Deleting a report is permanent. The report will no longer be sent to recipients.</p>
             </div>
         </div>
 
-        <span class="button-style">Save</span>
-        -->
     </div>
 <script>
     includeHTML();
 </script>
 </body>
-</html> 
+</html>
